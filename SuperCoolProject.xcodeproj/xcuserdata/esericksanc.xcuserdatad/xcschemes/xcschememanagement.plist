@@ -4,15 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AgendaService.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>CalendarService.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<key>SuperCoolProject.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 		<key>TestRunner.xcscheme_^#shared#^_</key>
 		<dict>
@@ -22,7 +27,7 @@
 		<key>WeatherService.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -58,6 +63,16 @@
 			<true/>
 		</dict>
 		<key>E182F7F024ADCF50001E8A9F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E182F80D24ADD055001E8A9F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E182F81524ADD055001E8A9F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

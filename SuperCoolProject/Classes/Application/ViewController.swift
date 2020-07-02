@@ -34,23 +34,4 @@ class ViewController: UIViewController {
 import Promise
 import CalendarService
 import WeatherService
-
-// agenda
-
-public struct Agenda {
-  let date: Date
-  let items: [AgendaItem]
-}
-
-public struct AgendaItem {
-  let event: Event
-  let weather: Weather
-}
-
-public protocol AgendaService {
-  func agenda(for date: Date) -> Promise<Agenda>
-}
-
-// weather
-
-// calendar
+import AgendaService

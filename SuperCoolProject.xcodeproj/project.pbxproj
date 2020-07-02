@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		050647F6212E115433CE501B /* Pods_SuperCoolProject_SuperCoolProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E330ABDE8BE6FC6D2D592456 /* Pods_SuperCoolProject_SuperCoolProjectUITests.framework */; };
 		56489B0F88A0EB9A660611A9 /* Pods_SuperCoolProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CA8ABC99768BC0CF7868D4 /* Pods_SuperCoolProject.framework */; };
+		61F77D9E6F98A75A4D946D0A /* Pods_AgendaService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A089396866928EA26B1B10 /* Pods_AgendaService.framework */; };
 		9DB4F572D8FC57C1528BFCBA /* Pods_CalendarService_CalendarServiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660D17D992409D5B7FECC471 /* Pods_CalendarService_CalendarServiceTests.framework */; };
 		B82B5977E408D283FAE569AA /* Pods_WeatherService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1716C54F78FC595AA07476E7 /* Pods_WeatherService.framework */; };
 		E182F76C24AD1ED7001E8A9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F76B24AD1ED7001E8A9F /* AppDelegate.swift */; };
@@ -29,7 +30,13 @@
 		E182F7FE24ADCF51001E8A9F /* WeatherService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182F7E924ADCF50001E8A9F /* WeatherService.framework */; };
 		E182F7FF24ADCF51001E8A9F /* WeatherService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E182F7E924ADCF50001E8A9F /* WeatherService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E182F80824ADCF8A001E8A9F /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F80724ADCF8A001E8A9F /* WeatherService.swift */; };
+		E182F81724ADD055001E8A9F /* AgendaService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182F80E24ADD055001E8A9F /* AgendaService.framework */; };
+		E182F81E24ADD055001E8A9F /* AgendaServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F81D24ADD055001E8A9F /* AgendaServiceTests.swift */; };
+		E182F82324ADD055001E8A9F /* AgendaService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182F80E24ADD055001E8A9F /* AgendaService.framework */; };
+		E182F82424ADD055001E8A9F /* AgendaService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E182F80E24ADD055001E8A9F /* AgendaService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E182F82E24ADD115001E8A9F /* AgendaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F82C24ADD074001E8A9F /* AgendaService.swift */; };
 		EFA288185BECF20548E5B364 /* Pods_CalendarService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB291182FAFABA7B059AB09 /* Pods_CalendarService.framework */; };
+		F1E63890FD61EBF4A45A08D7 /* Pods_AgendaService_AgendaServiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CDB5D89EF60C536BEAB0D2 /* Pods_AgendaService_AgendaServiceTests.framework */; };
 		F3D885D680DA9D66C2E9C1A6 /* Pods_SuperCoolProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6D12B80B544F638AAB60A7 /* Pods_SuperCoolProjectTests.framework */; };
 		FB6AC33304AB204ACAC13278 /* Pods_WeatherService_WeatherServiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9F773C45B187EE7A45723A /* Pods_WeatherService_WeatherServiceTests.framework */; };
 /* End PBXBuildFile section */
@@ -77,6 +84,20 @@
 			remoteGlobalIDString = E182F7E824ADCF50001E8A9F;
 			remoteInfo = WeatherService;
 		};
+		E182F81824ADD055001E8A9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E182F76024AD1ED7001E8A9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E182F80D24ADD055001E8A9F;
+			remoteInfo = AgendaService;
+		};
+		E182F82124ADD055001E8A9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E182F76024AD1ED7001E8A9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E182F80D24ADD055001E8A9F;
+			remoteInfo = AgendaService;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,6 +108,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				E182F7BB24ADC9A1001E8A9F /* CalendarService.framework in Embed Frameworks */,
+				E182F82424ADD055001E8A9F /* AgendaService.framework in Embed Frameworks */,
 				E182F7FF24ADCF51001E8A9F /* WeatherService.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -101,16 +123,20 @@
 		207AB65FE24074B363D45A13 /* Pods-CalendarService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarService.release.xcconfig"; path = "Target Support Files/Pods-CalendarService/Pods-CalendarService.release.xcconfig"; sourceTree = "<group>"; };
 		2450E46BF17D35C80317F540 /* Pods-SuperCoolProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-SuperCoolProjectTests/Pods-SuperCoolProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		24D3C6439439A9083BC83AC8 /* Pods-CalendarService-CalendarServiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarService-CalendarServiceTests.debug.xcconfig"; path = "Target Support Files/Pods-CalendarService-CalendarServiceTests/Pods-CalendarService-CalendarServiceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		29A089396866928EA26B1B10 /* Pods_AgendaService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgendaService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		322A365306DDE1832D36A9F4 /* Pods-CalendarService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarService.debug.xcconfig"; path = "Target Support Files/Pods-CalendarService/Pods-CalendarService.debug.xcconfig"; sourceTree = "<group>"; };
 		593313BD53B43238582F6DEF /* Pods-CalendarServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarServiceTests.release.xcconfig"; path = "Target Support Files/Pods-CalendarServiceTests/Pods-CalendarServiceTests.release.xcconfig"; sourceTree = "<group>"; };
 		660D17D992409D5B7FECC471 /* Pods_CalendarService_CalendarServiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarService_CalendarServiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FC959685DDF216CB66FC702 /* Pods-SuperCoolProject-SuperCoolProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-SuperCoolProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-SuperCoolProjectUITests/Pods-SuperCoolProject-SuperCoolProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7AAE2E731111736F825A9D88 /* Pods-WeatherService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherService.release.xcconfig"; path = "Target Support Files/Pods-WeatherService/Pods-WeatherService.release.xcconfig"; sourceTree = "<group>"; };
 		831001B5A8F24A3540381FF1 /* Pods-SuperCoolProject-SuperCoolProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-SuperCoolProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-SuperCoolProjectUITests/Pods-SuperCoolProject-SuperCoolProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		84CC53A4E67284D53A041B7A /* Pods-AgendaService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgendaService.release.xcconfig"; path = "Target Support Files/Pods-AgendaService/Pods-AgendaService.release.xcconfig"; sourceTree = "<group>"; };
+		89F080F77B94FEAE75C3D85E /* Pods-AgendaService-AgendaServiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgendaService-AgendaServiceTests.debug.xcconfig"; path = "Target Support Files/Pods-AgendaService-AgendaServiceTests/Pods-AgendaService-AgendaServiceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9AF63CF254A341DCC6E7296D /* Pods-SuperCoolProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProjectTests.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProjectTests/Pods-SuperCoolProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FB291182FAFABA7B059AB09 /* Pods_CalendarService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C81BBC286D5DEE972123BA /* Pods-SuperCoolProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject.debug.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject/Pods-SuperCoolProject.debug.xcconfig"; sourceTree = "<group>"; };
 		AD0D349A52BE34ACE0313708 /* Pods-SuperCoolProject-CalendarService-CalendarServiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-CalendarService-CalendarServiceTests.debug.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-CalendarService-CalendarServiceTests/Pods-SuperCoolProject-CalendarService-CalendarServiceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD7A5920DC8A18C5E316C49A /* Pods-AgendaService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgendaService.debug.xcconfig"; path = "Target Support Files/Pods-AgendaService/Pods-AgendaService.debug.xcconfig"; sourceTree = "<group>"; };
 		B056A0BDD3DEB4E8984686BB /* Pods-SuperCoolProject-CalendarService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-CalendarService.debug.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-CalendarService/Pods-SuperCoolProject-CalendarService.debug.xcconfig"; sourceTree = "<group>"; };
 		B33715443A76827F34FE4172 /* Pods-WeatherService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherService.debug.xcconfig"; path = "Target Support Files/Pods-WeatherService/Pods-WeatherService.debug.xcconfig"; sourceTree = "<group>"; };
 		BA9F773C45B187EE7A45723A /* Pods_WeatherService_WeatherServiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherService_WeatherServiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,10 +170,18 @@
 		E182F7F824ADCF51001E8A9F /* WeatherServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceTests.swift; sourceTree = "<group>"; };
 		E182F7FA24ADCF51001E8A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E182F80724ADCF8A001E8A9F /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		E182F80E24ADD055001E8A9F /* AgendaService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AgendaService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E182F81124ADD055001E8A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E182F81624ADD055001E8A9F /* AgendaServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgendaServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E182F81D24ADD055001E8A9F /* AgendaServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaServiceTests.swift; sourceTree = "<group>"; };
+		E182F81F24ADD055001E8A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E182F82C24ADD074001E8A9F /* AgendaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaService.swift; sourceTree = "<group>"; };
 		E2CA8ABC99768BC0CF7868D4 /* Pods_SuperCoolProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperCoolProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E330ABDE8BE6FC6D2D592456 /* Pods_SuperCoolProject_SuperCoolProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperCoolProject_SuperCoolProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A78A4553BF0B46B0FEE171 /* Pods-SuperCoolProject-CalendarService-CalendarServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-CalendarService-CalendarServiceTests.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-CalendarService-CalendarServiceTests/Pods-SuperCoolProject-CalendarService-CalendarServiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC7D95246FE64E56E609BFC9 /* Pods-AgendaService-AgendaServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgendaService-AgendaServiceTests.release.xcconfig"; path = "Target Support Files/Pods-AgendaService-AgendaServiceTests/Pods-AgendaService-AgendaServiceTests.release.xcconfig"; sourceTree = "<group>"; };
 		F1A88608A5BE985DF5A51BCD /* Pods-SuperCoolProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject/Pods-SuperCoolProject.release.xcconfig"; sourceTree = "<group>"; };
+		F2CDB5D89EF60C536BEAB0D2 /* Pods_AgendaService_AgendaServiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgendaService_AgendaServiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +189,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E182F82324ADD055001E8A9F /* AgendaService.framework in Frameworks */,
 				E182F7BA24ADC9A1001E8A9F /* CalendarService.framework in Frameworks */,
 				E182F7FE24ADCF51001E8A9F /* WeatherService.framework in Frameworks */,
 				56489B0F88A0EB9A660611A9 /* Pods_SuperCoolProject.framework in Frameworks */,
@@ -211,6 +246,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E182F80B24ADD055001E8A9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61F77D9E6F98A75A4D946D0A /* Pods_AgendaService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E182F81324ADD055001E8A9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E182F81724ADD055001E8A9F /* AgendaService.framework in Frameworks */,
+				F1E63890FD61EBF4A45A08D7 /* Pods_AgendaService_AgendaServiceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -237,6 +289,10 @@
 				7AAE2E731111736F825A9D88 /* Pods-WeatherService.release.xcconfig */,
 				C8B6EF5D7E4CD311B0D38FA1 /* Pods-WeatherService-WeatherServiceTests.debug.xcconfig */,
 				C64C2D8E90D7CC9F6D43878A /* Pods-WeatherService-WeatherServiceTests.release.xcconfig */,
+				AD7A5920DC8A18C5E316C49A /* Pods-AgendaService.debug.xcconfig */,
+				84CC53A4E67284D53A041B7A /* Pods-AgendaService.release.xcconfig */,
+				89F080F77B94FEAE75C3D85E /* Pods-AgendaService-AgendaServiceTests.debug.xcconfig */,
+				EC7D95246FE64E56E609BFC9 /* Pods-AgendaService-AgendaServiceTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -251,6 +307,8 @@
 				660D17D992409D5B7FECC471 /* Pods_CalendarService_CalendarServiceTests.framework */,
 				1716C54F78FC595AA07476E7 /* Pods_WeatherService.framework */,
 				BA9F773C45B187EE7A45723A /* Pods_WeatherService_WeatherServiceTests.framework */,
+				29A089396866928EA26B1B10 /* Pods_AgendaService.framework */,
+				F2CDB5D89EF60C536BEAB0D2 /* Pods_AgendaService_AgendaServiceTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -277,6 +335,8 @@
 				E182F7AD24ADC9A1001E8A9F /* CalendarServiceTests.xctest */,
 				E182F7E924ADCF50001E8A9F /* WeatherService.framework */,
 				E182F7F124ADCF50001E8A9F /* WeatherServiceTests.xctest */,
+				E182F80E24ADD055001E8A9F /* AgendaService.framework */,
+				E182F81624ADD055001E8A9F /* AgendaServiceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -319,6 +379,7 @@
 		E182F79C24ADC5AC001E8A9F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E182F80F24ADD055001E8A9F /* AgendaService */,
 				E182F7A624ADC9A1001E8A9F /* CalendarService */,
 				E182F7EA24ADCF50001E8A9F /* WeatherService */,
 			);
@@ -401,6 +462,33 @@
 			path = Impl;
 			sourceTree = "<group>";
 		};
+		E182F80F24ADD055001E8A9F /* AgendaService */ = {
+			isa = PBXGroup;
+			children = (
+				E182F82C24ADD074001E8A9F /* AgendaService.swift */,
+				E182F82B24ADD05F001E8A9F /* Impl */,
+				E182F81124ADD055001E8A9F /* Info.plist */,
+			);
+			path = AgendaService;
+			sourceTree = "<group>";
+		};
+		E182F81C24ADD055001E8A9F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E182F81D24ADD055001E8A9F /* AgendaServiceTests.swift */,
+				E182F81F24ADD055001E8A9F /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E182F82B24ADD05F001E8A9F /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				E182F81C24ADD055001E8A9F /* Tests */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -412,6 +500,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E182F7E424ADCF50001E8A9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E182F80924ADD055001E8A9F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -437,6 +532,7 @@
 			dependencies = (
 				E182F7B924ADC9A1001E8A9F /* PBXTargetDependency */,
 				E182F7FD24ADCF51001E8A9F /* PBXTargetDependency */,
+				E182F82224ADD055001E8A9F /* PBXTargetDependency */,
 			);
 			name = SuperCoolProject;
 			productName = SuperCoolProject;
@@ -560,6 +656,45 @@
 			productReference = E182F7F124ADCF50001E8A9F /* WeatherServiceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E182F80D24ADD055001E8A9F /* AgendaService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E182F82524ADD055001E8A9F /* Build configuration list for PBXNativeTarget "AgendaService" */;
+			buildPhases = (
+				72ABAE9C839D4D56F42A4D75 /* [CP] Check Pods Manifest.lock */,
+				E182F80924ADD055001E8A9F /* Headers */,
+				E182F80A24ADD055001E8A9F /* Sources */,
+				E182F80B24ADD055001E8A9F /* Frameworks */,
+				E182F80C24ADD055001E8A9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgendaService;
+			productName = AgendaService;
+			productReference = E182F80E24ADD055001E8A9F /* AgendaService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E182F81524ADD055001E8A9F /* AgendaServiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E182F82824ADD055001E8A9F /* Build configuration list for PBXNativeTarget "AgendaServiceTests" */;
+			buildPhases = (
+				E786F2A5B72C7E546AE73FB7 /* [CP] Check Pods Manifest.lock */,
+				E182F81224ADD055001E8A9F /* Sources */,
+				E182F81324ADD055001E8A9F /* Frameworks */,
+				E182F81424ADD055001E8A9F /* Resources */,
+				19AC142026765980801318B1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E182F81924ADD055001E8A9F /* PBXTargetDependency */,
+			);
+			name = AgendaServiceTests;
+			productName = AgendaServiceTests;
+			productReference = E182F81624ADD055001E8A9F /* AgendaServiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -595,6 +730,12 @@
 					E182F7F024ADCF50001E8A9F = {
 						CreatedOnToolsVersion = 11.5;
 					};
+					E182F80D24ADD055001E8A9F = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					E182F81524ADD055001E8A9F = {
+						CreatedOnToolsVersion = 11.5;
+					};
 				};
 			};
 			buildConfigurationList = E182F76324AD1ED7001E8A9F /* Build configuration list for PBXProject "SuperCoolProject" */;
@@ -617,6 +758,8 @@
 				E182F7AC24ADC9A1001E8A9F /* CalendarServiceTests */,
 				E182F7E824ADCF50001E8A9F /* WeatherService */,
 				E182F7F024ADCF50001E8A9F /* WeatherServiceTests */,
+				E182F80D24ADD055001E8A9F /* AgendaService */,
+				E182F81524ADD055001E8A9F /* AgendaServiceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -674,9 +817,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E182F80C24ADD055001E8A9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E182F81424ADD055001E8A9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		19AC142026765980801318B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AgendaService-AgendaServiceTests/Pods-AgendaService-AgendaServiceTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AgendaService-AgendaServiceTests/Pods-AgendaService-AgendaServiceTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AgendaService-AgendaServiceTests/Pods-AgendaService-AgendaServiceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		30BE3199578962435A460B87 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -754,6 +928,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-WeatherService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72ABAE9C839D4D56F42A4D75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgendaService-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -899,6 +1095,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E786F2A5B72C7E546AE73FB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgendaService-AgendaServiceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -960,6 +1178,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E182F80A24ADD055001E8A9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E182F82E24ADD115001E8A9F /* AgendaService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E182F81224ADD055001E8A9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E182F81E24ADD055001E8A9F /* AgendaServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -992,6 +1226,16 @@
 			isa = PBXTargetDependency;
 			target = E182F7E824ADCF50001E8A9F /* WeatherService */;
 			targetProxy = E182F7FC24ADCF51001E8A9F /* PBXContainerItemProxy */;
+		};
+		E182F81924ADD055001E8A9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E182F80D24ADD055001E8A9F /* AgendaService */;
+			targetProxy = E182F81824ADD055001E8A9F /* PBXContainerItemProxy */;
+		};
+		E182F82224ADD055001E8A9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E182F80D24ADD055001E8A9F /* AgendaService */;
+			targetProxy = E182F82124ADD055001E8A9F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1447,6 +1691,100 @@
 			};
 			name = Release;
 		};
+		E182F82624ADD055001E8A9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD7A5920DC8A18C5E316C49A /* Pods-AgendaService.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SuperCoolProject/Services/AgendaService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = foobar.AgendaService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E182F82724ADD055001E8A9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84CC53A4E67284D53A041B7A /* Pods-AgendaService.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SuperCoolProject/Services/AgendaService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = foobar.AgendaService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E182F82924ADD055001E8A9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F080F77B94FEAE75C3D85E /* Pods-AgendaService-AgendaServiceTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuperCoolProject/Services/AgendaService/Impl/Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = foobar.AgendaServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E182F82A24ADD055001E8A9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC7D95246FE64E56E609BFC9 /* Pods-AgendaService-AgendaServiceTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuperCoolProject/Services/AgendaService/Impl/Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = foobar.AgendaServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1518,6 +1856,24 @@
 			buildConfigurations = (
 				E182F80224ADCF51001E8A9F /* Debug */,
 				E182F80324ADCF51001E8A9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E182F82524ADD055001E8A9F /* Build configuration list for PBXNativeTarget "AgendaService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E182F82624ADD055001E8A9F /* Debug */,
+				E182F82724ADD055001E8A9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E182F82824ADD055001E8A9F /* Build configuration list for PBXNativeTarget "AgendaServiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E182F82924ADD055001E8A9F /* Debug */,
+				E182F82A24ADD055001E8A9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -4,7 +4,6 @@ target 'SuperCoolProject' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for SuperCoolProject
   pod 'Promises'
 
   target 'SuperCoolProjectTests' do
@@ -14,6 +13,17 @@ target 'SuperCoolProject' do
 
   target 'SuperCoolProjectUITests' do
     # Pods for testing
+  end
+
+  target 'AgendaService' do
+    inherit! :search_paths
+
+    pod 'Promises'
+
+    target 'AgendaServiceTests' do
+      # Removing this line will inherit the parent pods
+      # inherit! :search_paths
+    end
   end
 
   target 'CalendarService' do

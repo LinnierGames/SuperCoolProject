@@ -68,6 +68,16 @@
                ReferencedContainer = "container:SuperCoolProject.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E182F81524ADD055001E8A9F"
+               BuildableName = "AgendaServiceTests.xctest"
+               BlueprintName = "AgendaServiceTests"
+               ReferencedContainer = "container:SuperCoolProject.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
