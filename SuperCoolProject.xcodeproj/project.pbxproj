@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		050647F6212E115433CE501B /* Pods_SuperCoolProject_SuperCoolProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E330ABDE8BE6FC6D2D592456 /* Pods_SuperCoolProject_SuperCoolProjectUITests.framework */; };
-		12D1411C5D30C6687AEB08AC /* Pods_AgendaService_AgendaServiceMocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A7CFF20E3ED61BA096099 /* Pods_AgendaService_AgendaServiceMocks.framework */; };
+		12D1411C5D30C6687AEB08AC /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		56489B0F88A0EB9A660611A9 /* Pods_SuperCoolProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CA8ABC99768BC0CF7868D4 /* Pods_SuperCoolProject.framework */; };
 		61F77D9E6F98A75A4D946D0A /* Pods_AgendaService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A089396866928EA26B1B10 /* Pods_AgendaService.framework */; };
+		6AA6CB2E7F19697DD2A9EB88 /* Pods_CalendarService_CalendarServiceMocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A55D000547BB5C0396C0F5 /* Pods_CalendarService_CalendarServiceMocks.framework */; };
 		9DB4F572D8FC57C1528BFCBA /* Pods_CalendarService_CalendarServiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660D17D992409D5B7FECC471 /* Pods_CalendarService_CalendarServiceTests.framework */; };
 		B82B5977E408D283FAE569AA /* Pods_WeatherService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1716C54F78FC595AA07476E7 /* Pods_WeatherService.framework */; };
 		E182F76C24AD1ED7001E8A9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F76B24AD1ED7001E8A9F /* AppDelegate.swift */; };
@@ -51,6 +52,11 @@
 		E182F86B24AE64B0001E8A9F /* Mockgen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F83D24AE5A57001E8A9F /* Mockgen.swift */; };
 		E182F86D24AE64E5001E8A9F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182F86C24AE64E5001E8A9F /* XCTest.framework */; };
 		E182F86E24AE64E5001E8A9F /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E182F86C24AE64E5001E8A9F /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E182F87B24AE6729001E8A9F /* AgendaService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182F80E24ADD055001E8A9F /* AgendaService.framework */; };
+		E182F87C24AE6729001E8A9F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182F86C24AE64E5001E8A9F /* XCTest.framework */; };
+		E182F88024AE6729001E8A9F /* AgendaService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E182F80E24ADD055001E8A9F /* AgendaService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E182F88124AE6729001E8A9F /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E182F86C24AE64E5001E8A9F /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E182F89124AE6A7E001E8A9F /* Mockgen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F89024AE6A7E001E8A9F /* Mockgen.swift */; };
 		EFA288185BECF20548E5B364 /* Pods_CalendarService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB291182FAFABA7B059AB09 /* Pods_CalendarService.framework */; };
 		F1E63890FD61EBF4A45A08D7 /* Pods_AgendaService_AgendaServiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CDB5D89EF60C536BEAB0D2 /* Pods_AgendaService_AgendaServiceTests.framework */; };
 		F3D885D680DA9D66C2E9C1A6 /* Pods_SuperCoolProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6D12B80B544F638AAB60A7 /* Pods_SuperCoolProjectTests.framework */; };
@@ -135,6 +141,13 @@
 			remoteGlobalIDString = E182F80D24ADD055001E8A9F;
 			remoteInfo = AgendaService;
 		};
+		E182F88724AE6749001E8A9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E182F76024AD1ED7001E8A9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E182F7A424ADC9A1001E8A9F;
+			remoteInfo = CalendarService;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -149,15 +162,6 @@
 				E182F7FF24ADCF51001E8A9F /* WeatherService.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E182F83C24AE58B5001E8A9F /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 7;
-			files = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E182F84924AE61C5001E8A9F /* Embed Frameworks */ = {
@@ -184,10 +188,23 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E182F87F24AE6729001E8A9F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E182F88024AE6729001E8A9F /* AgendaService.framework in Embed Frameworks */,
+				E182F88124AE6729001E8A9F /* XCTest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0169F035B6D5B15437A9310D /* Pods-SuperCoolProject-CalendarService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-CalendarService.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-CalendarService/Pods-SuperCoolProject-CalendarService.release.xcconfig"; sourceTree = "<group>"; };
+		10898A8096B3BD3739D122ED /* Pods-CalendarService-CalendarServiceMocks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarService-CalendarServiceMocks.debug.xcconfig"; path = "Target Support Files/Pods-CalendarService-CalendarServiceMocks/Pods-CalendarService-CalendarServiceMocks.debug.xcconfig"; sourceTree = "<group>"; };
 		1337C87052D75112E90368A2 /* Pods-CalendarServiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarServiceTests.debug.xcconfig"; path = "Target Support Files/Pods-CalendarServiceTests/Pods-CalendarServiceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1716C54F78FC595AA07476E7 /* Pods_WeatherService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		207AB65FE24074B363D45A13 /* Pods-CalendarService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarService.release.xcconfig"; path = "Target Support Files/Pods-CalendarService/Pods-CalendarService.release.xcconfig"; sourceTree = "<group>"; };
@@ -203,7 +220,6 @@
 		831001B5A8F24A3540381FF1 /* Pods-SuperCoolProject-SuperCoolProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-SuperCoolProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-SuperCoolProjectUITests/Pods-SuperCoolProject-SuperCoolProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		84CC53A4E67284D53A041B7A /* Pods-AgendaService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgendaService.release.xcconfig"; path = "Target Support Files/Pods-AgendaService/Pods-AgendaService.release.xcconfig"; sourceTree = "<group>"; };
 		89F080F77B94FEAE75C3D85E /* Pods-AgendaService-AgendaServiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgendaService-AgendaServiceTests.debug.xcconfig"; path = "Target Support Files/Pods-AgendaService-AgendaServiceTests/Pods-AgendaService-AgendaServiceTests.debug.xcconfig"; sourceTree = "<group>"; };
-		968A7CFF20E3ED61BA096099 /* Pods_AgendaService_AgendaServiceMocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgendaService_AgendaServiceMocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF63CF254A341DCC6E7296D /* Pods-SuperCoolProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProjectTests.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProjectTests/Pods-SuperCoolProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FB291182FAFABA7B059AB09 /* Pods_CalendarService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C81BBC286D5DEE972123BA /* Pods-SuperCoolProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject.debug.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject/Pods-SuperCoolProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -211,7 +227,9 @@
 		AD7A5920DC8A18C5E316C49A /* Pods-AgendaService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgendaService.debug.xcconfig"; path = "Target Support Files/Pods-AgendaService/Pods-AgendaService.debug.xcconfig"; sourceTree = "<group>"; };
 		B056A0BDD3DEB4E8984686BB /* Pods-SuperCoolProject-CalendarService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-CalendarService.debug.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-CalendarService/Pods-SuperCoolProject-CalendarService.debug.xcconfig"; sourceTree = "<group>"; };
 		B33715443A76827F34FE4172 /* Pods-WeatherService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherService.debug.xcconfig"; path = "Target Support Files/Pods-WeatherService/Pods-WeatherService.debug.xcconfig"; sourceTree = "<group>"; };
+		B599CF4CBB21623F9FEFC11E /* Pods-CalendarService-CalendarServiceMocks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarService-CalendarServiceMocks.release.xcconfig"; path = "Target Support Files/Pods-CalendarService-CalendarServiceMocks/Pods-CalendarService-CalendarServiceMocks.release.xcconfig"; sourceTree = "<group>"; };
 		BA9F773C45B187EE7A45723A /* Pods_WeatherService_WeatherServiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherService_WeatherServiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2A55D000547BB5C0396C0F5 /* Pods_CalendarService_CalendarServiceMocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarService_CalendarServiceMocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37167E4867232CD1494BF19 /* Pods-CalendarService-CalendarServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarService-CalendarServiceTests.release.xcconfig"; path = "Target Support Files/Pods-CalendarService-CalendarServiceTests/Pods-CalendarService-CalendarServiceTests.release.xcconfig"; sourceTree = "<group>"; };
 		C64C2D8E90D7CC9F6D43878A /* Pods-WeatherService-WeatherServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherService-WeatherServiceTests.release.xcconfig"; path = "Target Support Files/Pods-WeatherService-WeatherServiceTests/Pods-WeatherService-WeatherServiceTests.release.xcconfig"; sourceTree = "<group>"; };
 		C8B6EF5D7E4CD311B0D38FA1 /* Pods-WeatherService-WeatherServiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherService-WeatherServiceTests.debug.xcconfig"; path = "Target Support Files/Pods-WeatherService-WeatherServiceTests/Pods-WeatherService-WeatherServiceTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -259,6 +277,10 @@
 		E182F85E24AE645A001E8A9F /* AgendaServiceMocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AgendaServiceMocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E182F86C24AE64E5001E8A9F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E182F86F24AE6545001E8A9F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E182F88524AE6729001E8A9F /* CalendarServiceMocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CalendarServiceMocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E182F88624AE6729001E8A9F /* AgendaServiceMocks copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AgendaServiceMocks copy-Info.plist"; path = "/Users/esericksanc/Developer/Open-Source/SuperCoolProject/AgendaServiceMocks copy-Info.plist"; sourceTree = "<absolute>"; };
+		E182F88D24AE6792001E8A9F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E182F89024AE6A7E001E8A9F /* Mockgen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mockgen.swift; sourceTree = "<group>"; };
 		E2CA8ABC99768BC0CF7868D4 /* Pods_SuperCoolProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperCoolProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E330ABDE8BE6FC6D2D592456 /* Pods_SuperCoolProject_SuperCoolProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperCoolProject_SuperCoolProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A78A4553BF0B46B0FEE171 /* Pods-SuperCoolProject-CalendarService-CalendarServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-CalendarService-CalendarServiceTests.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-CalendarService-CalendarServiceTests/Pods-SuperCoolProject-CalendarService-CalendarServiceTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -354,7 +376,17 @@
 			files = (
 				E182F86624AE64A1001E8A9F /* AgendaService.framework in Frameworks */,
 				E182F86D24AE64E5001E8A9F /* XCTest.framework in Frameworks */,
-				12D1411C5D30C6687AEB08AC /* Pods_AgendaService_AgendaServiceMocks.framework in Frameworks */,
+				12D1411C5D30C6687AEB08AC /* (null) in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E182F87A24AE6729001E8A9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E182F87B24AE6729001E8A9F /* AgendaService.framework in Frameworks */,
+				E182F87C24AE6729001E8A9F /* XCTest.framework in Frameworks */,
+				6AA6CB2E7F19697DD2A9EB88 /* Pods_CalendarService_CalendarServiceMocks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +422,8 @@
 				EC7D95246FE64E56E609BFC9 /* Pods-AgendaService-AgendaServiceTests.release.xcconfig */,
 				E16301A002A9C9CFAE368BD0 /* Pods-AgendaService-AgendaServiceMocks.debug.xcconfig */,
 				59828DF3EEF76392D1FB6FEB /* Pods-AgendaService-AgendaServiceMocks.release.xcconfig */,
+				10898A8096B3BD3739D122ED /* Pods-CalendarService-CalendarServiceMocks.debug.xcconfig */,
+				B599CF4CBB21623F9FEFC11E /* Pods-CalendarService-CalendarServiceMocks.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -407,7 +441,7 @@
 				BA9F773C45B187EE7A45723A /* Pods_WeatherService_WeatherServiceTests.framework */,
 				29A089396866928EA26B1B10 /* Pods_AgendaService.framework */,
 				F2CDB5D89EF60C536BEAB0D2 /* Pods_AgendaService_AgendaServiceTests.framework */,
-				968A7CFF20E3ED61BA096099 /* Pods_AgendaService_AgendaServiceMocks.framework */,
+				C2A55D000547BB5C0396C0F5 /* Pods_CalendarService_CalendarServiceMocks.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -421,6 +455,7 @@
 				E182F76924AD1ED7001E8A9F /* Products */,
 				1843714F00E853FC663BFAAC /* Pods */,
 				DE8A4D8BB440232F2D40A466 /* Frameworks */,
+				E182F88624AE6729001E8A9F /* AgendaServiceMocks copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -437,6 +472,7 @@
 				E182F80E24ADD055001E8A9F /* AgendaService.framework */,
 				E182F81624ADD055001E8A9F /* AgendaServiceTests.xctest */,
 				E182F85E24AE645A001E8A9F /* AgendaServiceMocks.framework */,
+				E182F88524AE6729001E8A9F /* CalendarServiceMocks.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -514,6 +550,7 @@
 		E182F7B324ADC9A1001E8A9F /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				E182F88B24AE6792001E8A9F /* Mocks */,
 				E182F7B424ADC9A1001E8A9F /* CalendarServiceTests.swift */,
 				E182F7B624ADC9A1001E8A9F /* Info.plist */,
 			);
@@ -597,6 +634,15 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		E182F88B24AE6792001E8A9F /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				E182F89024AE6A7E001E8A9F /* Mockgen.swift */,
+				E182F88D24AE6792001E8A9F /* Info.plist */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -622,6 +668,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E182F85924AE645A001E8A9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E182F87624AE6729001E8A9F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -802,7 +855,6 @@
 				E182F81324ADD055001E8A9F /* Frameworks */,
 				E182F81424ADD055001E8A9F /* Resources */,
 				19AC142026765980801318B1 /* [CP] Embed Pods Frameworks */,
-				E182F83C24AE58B5001E8A9F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -834,6 +886,28 @@
 			name = AgendaServiceMocks;
 			productName = AgendaServiceMocks;
 			productReference = E182F85E24AE645A001E8A9F /* AgendaServiceMocks.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E182F87224AE6729001E8A9F /* CalendarServiceMocks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E182F88224AE6729001E8A9F /* Build configuration list for PBXNativeTarget "CalendarServiceMocks" */;
+			buildPhases = (
+				E182F87524AE6729001E8A9F /* [CP] Check Pods Manifest.lock */,
+				E182F87624AE6729001E8A9F /* Headers */,
+				E182F87724AE6729001E8A9F /* Generate Mocks */,
+				E182F87824AE6729001E8A9F /* Sources */,
+				E182F87A24AE6729001E8A9F /* Frameworks */,
+				E182F87E24AE6729001E8A9F /* Resources */,
+				E182F87F24AE6729001E8A9F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E182F88824AE6749001E8A9F /* PBXTargetDependency */,
+			);
+			name = CalendarServiceMocks;
+			productName = AgendaServiceMocks;
+			productReference = E182F88524AE6729001E8A9F /* CalendarServiceMocks.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -880,6 +954,9 @@
 					E182F85D24AE645A001E8A9F = {
 						CreatedOnToolsVersion = 11.5;
 					};
+					E182F87224AE6729001E8A9F = {
+						LastSwiftMigration = 1150;
+					};
 				};
 			};
 			buildConfigurationList = E182F76324AD1ED7001E8A9F /* Build configuration list for PBXProject "SuperCoolProject" */;
@@ -899,6 +976,7 @@
 				E182F77D24AD1ED8001E8A9F /* SuperCoolProjectTests */,
 				E182F78824AD1ED8001E8A9F /* SuperCoolProjectUITests */,
 				E182F7A424ADC9A1001E8A9F /* CalendarService */,
+				E182F87224AE6729001E8A9F /* CalendarServiceMocks */,
 				E182F7AC24ADC9A1001E8A9F /* CalendarServiceTests */,
 				E182F7E824ADCF50001E8A9F /* WeatherService */,
 				E182F7F024ADCF50001E8A9F /* WeatherServiceTests */,
@@ -977,6 +1055,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E182F85C24AE645A001E8A9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E182F87E24AE6729001E8A9F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1241,7 +1326,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which ./Pods/Sourcery/bin/sourcery >/dev/null; then\n  ./Pods/Sourcery/bin/sourcery \\\n  --sources ./SuperCoolProject/Services/AgendaService \\\n  --templates ./Util/Templates \\\n  --output ./SuperCoolProject/Services/AgendaService/Impl/Tests/Mockgen.swift\nelse\n  echo \"error: Sourcey is not installed for this Target, please add pod 'Sourcey' to the Podfile for this target and try again\"\nfi\n";
+			shellScript = "if which ./Pods/Sourcery/bin/sourcery >/dev/null; then\n  ./Pods/Sourcery/bin/sourcery \\\n  --sources ./SuperCoolProject/Services/AgendaService \\\n  --templates ./Util/Templates \\\n  --output ./SuperCoolProject/Services/AgendaService/Impl/Tests/Mocks/Mockgen.swift\nelse\n  echo \"error: Sourcey is not installed for this Target, please add pod 'Sourcey' to the Podfile for this target and try again\"\nfi\n";
+		};
+		E182F87524AE6729001E8A9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CalendarService-CalendarServiceMocks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E182F87724AE6729001E8A9F /* Generate Mocks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Mocks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which ./Pods/Sourcery/bin/sourcery >/dev/null; then\n  ./Pods/Sourcery/bin/sourcery \\\n  --sources ./SuperCoolProject/Services/CalendarService \\\n  --templates ./Util/Templates \\\n  --output ./SuperCoolProject/Services/CalendarService/Impl/Tests/Mocks/Mockgen.swift\nelse\n  echo \"error: Sourcey is not installed for this Target, please add pod 'Sourcey' to the Podfile for this target and try again\"\nfi\n";
 		};
 		E23EA93FBA152E378FB3636C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1400,6 +1525,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E182F87824AE6729001E8A9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E182F89124AE6A7E001E8A9F /* Mockgen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1457,6 +1590,11 @@
 			isa = PBXTargetDependency;
 			target = E182F80D24ADD055001E8A9F /* AgendaService */;
 			targetProxy = E182F86824AE64A1001E8A9F /* PBXContainerItemProxy */;
+		};
+		E182F88824AE6749001E8A9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E182F7A424ADC9A1001E8A9F /* CalendarService */;
+			targetProxy = E182F88724AE6749001E8A9F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2060,6 +2198,63 @@
 			};
 			name = Release;
 		};
+		E182F88324AE6729001E8A9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10898A8096B3BD3739D122ED /* Pods-CalendarService-CalendarServiceMocks.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "AgendaServiceMocks copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = foobar.AgendaServiceMocks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E182F88424AE6729001E8A9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B599CF4CBB21623F9FEFC11E /* Pods-CalendarService-CalendarServiceMocks.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "AgendaServiceMocks copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = foobar.AgendaServiceMocks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2158,6 +2353,15 @@
 			buildConfigurations = (
 				E182F86424AE645A001E8A9F /* Debug */,
 				E182F86524AE645A001E8A9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E182F88224AE6729001E8A9F /* Build configuration list for PBXNativeTarget "CalendarServiceMocks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E182F88324AE6729001E8A9F /* Debug */,
+				E182F88424AE6729001E8A9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

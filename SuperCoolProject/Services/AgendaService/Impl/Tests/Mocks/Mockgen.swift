@@ -38,4 +38,5 @@ open class AgendaServiceMock: AgendaService {
     }
   }
 }
+
 // sourcery:end

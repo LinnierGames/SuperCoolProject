@@ -34,6 +34,9 @@ target 'SuperCoolProject' do
 
     target 'CalendarServiceTests' do
     end
+    target 'CalendarServiceMocks' do
+      pod 'Sourcery'
+    end
   end
 
   target 'WeatherService' do
