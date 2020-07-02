@@ -160,6 +160,13 @@
 			remoteGlobalIDString = E182F87224AE6729001E8A9F;
 			remoteInfo = CalendarServiceMocks;
 		};
+		E182F8AA24AE6D20001E8A9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E182F76024AD1ED7001E8A9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E182F89824AE6C29001E8A9F;
+			remoteInfo = WeatherServiceMocks;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -919,6 +926,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E182F8AB24AE6D20001E8A9F /* PBXTargetDependency */,
 				E182F89324AE6B01001E8A9F /* PBXTargetDependency */,
 				E182F81924ADD055001E8A9F /* PBXTargetDependency */,
 			);
@@ -1741,6 +1749,11 @@
 			isa = PBXTargetDependency;
 			target = E182F87224AE6729001E8A9F /* CalendarServiceMocks */;
 			targetProxy = E182F89224AE6B01001E8A9F /* PBXContainerItemProxy */;
+		};
+		E182F8AB24AE6D20001E8A9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E182F89824AE6C29001E8A9F /* WeatherServiceMocks */;
+			targetProxy = E182F8AA24AE6D20001E8A9F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
