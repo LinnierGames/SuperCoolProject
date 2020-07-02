@@ -356,7 +356,7 @@
 		E182F76A24AD1ED7001E8A9F /* SuperCoolProject */ = {
 			isa = PBXGroup;
 			children = (
-				E182F79B24ADC59E001E8A9F /* Classes */,
+				E182F79D24ADC5BF001E8A9F /* Application */,
 				E182F79C24ADC5AC001E8A9F /* Services */,
 			);
 			path = SuperCoolProject;
@@ -378,14 +378,6 @@
 				E182F78F24AD1ED8001E8A9F /* Info.plist */,
 			);
 			path = SuperCoolProjectUITests;
-			sourceTree = "<group>";
-		};
-		E182F79B24ADC59E001E8A9F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				E182F79D24ADC5BF001E8A9F /* Application */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		E182F79C24ADC5AC001E8A9F /* Services */ = {
