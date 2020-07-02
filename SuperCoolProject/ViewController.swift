@@ -8,6 +8,19 @@
 
 import UIKit
 
+// display calendar and its weather
+// - oAuth
+// - cache auth token
+// - fetching events from each calendar provider
+// - cache events
+// - fetch weather
+// - cache weather
+
+use protocols
+use frameworks
+use cocoapods
+add mocking generator
+
 class ViewController: UIViewController {
 
   override func viewDidLoad() {

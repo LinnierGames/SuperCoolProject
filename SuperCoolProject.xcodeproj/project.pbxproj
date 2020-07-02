@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050647F6212E115433CE501B /* Pods_SuperCoolProject_SuperCoolProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E330ABDE8BE6FC6D2D592456 /* Pods_SuperCoolProject_SuperCoolProjectUITests.framework */; };
+		56489B0F88A0EB9A660611A9 /* Pods_SuperCoolProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CA8ABC99768BC0CF7868D4 /* Pods_SuperCoolProject.framework */; };
 		E182F76C24AD1ED7001E8A9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F76B24AD1ED7001E8A9F /* AppDelegate.swift */; };
 		E182F76E24AD1ED7001E8A9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F76D24AD1ED7001E8A9F /* SceneDelegate.swift */; };
 		E182F77024AD1ED7001E8A9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F76F24AD1ED7001E8A9F /* ViewController.swift */; };
@@ -15,6 +17,7 @@
 		E182F77824AD1ED8001E8A9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E182F77624AD1ED8001E8A9F /* LaunchScreen.storyboard */; };
 		E182F78324AD1ED8001E8A9F /* SuperCoolProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F78224AD1ED8001E8A9F /* SuperCoolProjectTests.swift */; };
 		E182F78E24AD1ED8001E8A9F /* SuperCoolProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F78D24AD1ED8001E8A9F /* SuperCoolProjectUITests.swift */; };
+		F3D885D680DA9D66C2E9C1A6 /* Pods_SuperCoolProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6D12B80B544F638AAB60A7 /* Pods_SuperCoolProjectTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2450E46BF17D35C80317F540 /* Pods-SuperCoolProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-SuperCoolProjectTests/Pods-SuperCoolProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6FC959685DDF216CB66FC702 /* Pods-SuperCoolProject-SuperCoolProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-SuperCoolProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-SuperCoolProjectUITests/Pods-SuperCoolProject-SuperCoolProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		831001B5A8F24A3540381FF1 /* Pods-SuperCoolProject-SuperCoolProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-SuperCoolProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-SuperCoolProjectUITests/Pods-SuperCoolProject-SuperCoolProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9AF63CF254A341DCC6E7296D /* Pods-SuperCoolProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProjectTests.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProjectTests/Pods-SuperCoolProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2C81BBC286D5DEE972123BA /* Pods-SuperCoolProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject.debug.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject/Pods-SuperCoolProject.debug.xcconfig"; sourceTree = "<group>"; };
+		DA6D12B80B544F638AAB60A7 /* Pods_SuperCoolProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperCoolProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E182F76824AD1ED7001E8A9F /* SuperCoolProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperCoolProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E182F76B24AD1ED7001E8A9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E182F76D24AD1ED7001E8A9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,9 @@
 		E182F78924AD1ED8001E8A9F /* SuperCoolProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperCoolProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E182F78D24AD1ED8001E8A9F /* SuperCoolProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperCoolProjectUITests.swift; sourceTree = "<group>"; };
 		E182F78F24AD1ED8001E8A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2CA8ABC99768BC0CF7868D4 /* Pods_SuperCoolProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperCoolProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E330ABDE8BE6FC6D2D592456 /* Pods_SuperCoolProject_SuperCoolProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperCoolProject_SuperCoolProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A88608A5BE985DF5A51BCD /* Pods-SuperCoolProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject/Pods-SuperCoolProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56489B0F88A0EB9A660611A9 /* Pods_SuperCoolProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D885D680DA9D66C2E9C1A6 /* Pods_SuperCoolProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				050647F6212E115433CE501B /* Pods_SuperCoolProject_SuperCoolProjectUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1843714F00E853FC663BFAAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2C81BBC286D5DEE972123BA /* Pods-SuperCoolProject.debug.xcconfig */,
+				F1A88608A5BE985DF5A51BCD /* Pods-SuperCoolProject.release.xcconfig */,
+				6FC959685DDF216CB66FC702 /* Pods-SuperCoolProject-SuperCoolProjectUITests.debug.xcconfig */,
+				831001B5A8F24A3540381FF1 /* Pods-SuperCoolProject-SuperCoolProjectUITests.release.xcconfig */,
+				2450E46BF17D35C80317F540 /* Pods-SuperCoolProjectTests.debug.xcconfig */,
+				9AF63CF254A341DCC6E7296D /* Pods-SuperCoolProjectTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE8A4D8BB440232F2D40A466 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2CA8ABC99768BC0CF7868D4 /* Pods_SuperCoolProject.framework */,
+				E330ABDE8BE6FC6D2D592456 /* Pods_SuperCoolProject_SuperCoolProjectUITests.framework */,
+				DA6D12B80B544F638AAB60A7 /* Pods_SuperCoolProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E182F75F24AD1ED7001E8A9F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				E182F78124AD1ED8001E8A9F /* SuperCoolProjectTests */,
 				E182F78C24AD1ED8001E8A9F /* SuperCoolProjectUITests */,
 				E182F76924AD1ED7001E8A9F /* Products */,
+				1843714F00E853FC663BFAAC /* Pods */,
+				DE8A4D8BB440232F2D40A466 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E182F79224AD1ED8001E8A9F /* Build configuration list for PBXNativeTarget "SuperCoolProject" */;
 			buildPhases = (
+				E47B97F9F398DC1CF1EDA23C /* [CP] Check Pods Manifest.lock */,
 				E182F76424AD1ED7001E8A9F /* Sources */,
 				E182F76524AD1ED7001E8A9F /* Frameworks */,
 				E182F76624AD1ED7001E8A9F /* Resources */,
@@ -152,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E182F79524AD1ED8001E8A9F /* Build configuration list for PBXNativeTarget "SuperCoolProjectTests" */;
 			buildPhases = (
+				7B12C26EE0FAA2886A1C9A43 /* [CP] Check Pods Manifest.lock */,
 				E182F77A24AD1ED8001E8A9F /* Sources */,
 				E182F77B24AD1ED8001E8A9F /* Frameworks */,
 				E182F77C24AD1ED8001E8A9F /* Resources */,
@@ -170,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E182F79824AD1ED8001E8A9F /* Build configuration list for PBXNativeTarget "SuperCoolProjectUITests" */;
 			buildPhases = (
+				30BE3199578962435A460B87 /* [CP] Check Pods Manifest.lock */,
 				E182F78524AD1ED8001E8A9F /* Sources */,
 				E182F78624AD1ED8001E8A9F /* Frameworks */,
 				E182F78724AD1ED8001E8A9F /* Resources */,
@@ -253,6 +297,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30BE3199578962435A460B87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SuperCoolProject-SuperCoolProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B12C26EE0FAA2886A1C9A43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SuperCoolProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E47B97F9F398DC1CF1EDA23C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SuperCoolProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E182F76424AD1ED7001E8A9F /* Sources */ = {
@@ -432,10 +545,12 @@
 		};
 		E182F79324AD1ED8001E8A9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2C81BBC286D5DEE972123BA /* Pods-SuperCoolProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SuperCoolProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,10 +564,12 @@
 		};
 		E182F79424AD1ED8001E8A9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1A88608A5BE985DF5A51BCD /* Pods-SuperCoolProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SuperCoolProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,6 +583,7 @@
 		};
 		E182F79624AD1ED8001E8A9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2450E46BF17D35C80317F540 /* Pods-SuperCoolProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +605,7 @@
 		};
 		E182F79724AD1ED8001E8A9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AF63CF254A341DCC6E7296D /* Pods-SuperCoolProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +627,7 @@
 		};
 		E182F79924AD1ED8001E8A9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FC959685DDF216CB66FC702 /* Pods-SuperCoolProject-SuperCoolProjectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +647,7 @@
 		};
 		E182F79A24AD1ED8001E8A9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 831001B5A8F24A3540381FF1 /* Pods-SuperCoolProject-SuperCoolProjectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
