@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: baadc8a24afe682bf8a564930fbbc39a29d118c6
+PODS:
+  - Promises (2.0.4)
+
+DEPENDENCIES:
+  - Promises
+
+SPEC REPOS:
+  trunk:
+    - Promises
+
+SPEC CHECKSUMS:
+  Promises: fcb83dc6be43294a8d30c343636ed1a45a8d2e0a
+
+PODFILE CHECKSUM: 23bec01ede2a600904a523695efa9d16b06c42e7
 
 COCOAPODS: 1.8.4

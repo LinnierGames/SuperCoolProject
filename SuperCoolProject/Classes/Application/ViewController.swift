@@ -16,10 +16,10 @@ import UIKit
 // - fetch weather
 // - cache weather
 
-use protocols
-use frameworks
-use cocoapods
-add mocking generator
+//use protocols
+//use frameworks
+//use cocoapods
+//add mocking generator
 
 class ViewController: UIViewController {
 
@@ -31,3 +31,35 @@ class ViewController: UIViewController {
 
 }
 
+import Promise
+import CalendarService
+
+// agenda
+
+public struct Agenda {
+  let date: Date
+  let items: [AgendaItem]
+}
+
+public struct AgendaItem {
+  let event: Event
+  let weather: Weather
+}
+
+public protocol AgendaService {
+  func agenda(for date: Date) -> Promise<Agenda>
+}
+
+// weather
+
+public struct Weather {
+  let date: Date
+  let lowTemperature: Float
+  let highTemperature: Float
+}
+
+public protocol WeatherService {
+  func weather(for date: Date) -> Promise<Weather>
+}
+
+// calendar
