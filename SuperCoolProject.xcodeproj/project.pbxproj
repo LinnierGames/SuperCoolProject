@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		050647F6212E115433CE501B /* Pods_SuperCoolProject_SuperCoolProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E330ABDE8BE6FC6D2D592456 /* Pods_SuperCoolProject_SuperCoolProjectUITests.framework */; };
 		56489B0F88A0EB9A660611A9 /* Pods_SuperCoolProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CA8ABC99768BC0CF7868D4 /* Pods_SuperCoolProject.framework */; };
-		D52F89316C182423543E201C /* Pods_CalendarService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A739688E3F7FF3B687038A9 /* Pods_CalendarService.framework */; };
+		9DB4F572D8FC57C1528BFCBA /* Pods_CalendarService_CalendarServiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660D17D992409D5B7FECC471 /* Pods_CalendarService_CalendarServiceTests.framework */; };
 		E182F76C24AD1ED7001E8A9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F76B24AD1ED7001E8A9F /* AppDelegate.swift */; };
 		E182F76E24AD1ED7001E8A9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F76D24AD1ED7001E8A9F /* SceneDelegate.swift */; };
 		E182F77024AD1ED7001E8A9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F76F24AD1ED7001E8A9F /* ViewController.swift */; };
@@ -23,6 +23,7 @@
 		E182F7BA24ADC9A1001E8A9F /* CalendarService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182F7A524ADC9A1001E8A9F /* CalendarService.framework */; };
 		E182F7BB24ADC9A1001E8A9F /* CalendarService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E182F7A524ADC9A1001E8A9F /* CalendarService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E182F7C524ADC9E7001E8A9F /* CalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F7C424ADC9E7001E8A9F /* CalendarService.swift */; };
+		EFA288185BECF20548E5B364 /* Pods_CalendarService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB291182FAFABA7B059AB09 /* Pods_CalendarService.framework */; };
 		F3D885D680DA9D66C2E9C1A6 /* Pods_SuperCoolProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6D12B80B544F638AAB60A7 /* Pods_SuperCoolProjectTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,13 +56,6 @@
 			remoteGlobalIDString = E182F7A424ADC9A1001E8A9F;
 			remoteInfo = CalendarService;
 		};
-		E182F7C624ADCBAE001E8A9F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E182F76024AD1ED7001E8A9F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E182F76724AD1ED7001E8A9F;
-			remoteInfo = SuperCoolProject;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -79,14 +73,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0169F035B6D5B15437A9310D /* Pods-SuperCoolProject-CalendarService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-CalendarService.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-CalendarService/Pods-SuperCoolProject-CalendarService.release.xcconfig"; sourceTree = "<group>"; };
+		1337C87052D75112E90368A2 /* Pods-CalendarServiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarServiceTests.debug.xcconfig"; path = "Target Support Files/Pods-CalendarServiceTests/Pods-CalendarServiceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		207AB65FE24074B363D45A13 /* Pods-CalendarService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarService.release.xcconfig"; path = "Target Support Files/Pods-CalendarService/Pods-CalendarService.release.xcconfig"; sourceTree = "<group>"; };
 		2450E46BF17D35C80317F540 /* Pods-SuperCoolProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-SuperCoolProjectTests/Pods-SuperCoolProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		24D3C6439439A9083BC83AC8 /* Pods-CalendarService-CalendarServiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarService-CalendarServiceTests.debug.xcconfig"; path = "Target Support Files/Pods-CalendarService-CalendarServiceTests/Pods-CalendarService-CalendarServiceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		322A365306DDE1832D36A9F4 /* Pods-CalendarService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarService.debug.xcconfig"; path = "Target Support Files/Pods-CalendarService/Pods-CalendarService.debug.xcconfig"; sourceTree = "<group>"; };
+		593313BD53B43238582F6DEF /* Pods-CalendarServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarServiceTests.release.xcconfig"; path = "Target Support Files/Pods-CalendarServiceTests/Pods-CalendarServiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		660D17D992409D5B7FECC471 /* Pods_CalendarService_CalendarServiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarService_CalendarServiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FC959685DDF216CB66FC702 /* Pods-SuperCoolProject-SuperCoolProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-SuperCoolProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-SuperCoolProjectUITests/Pods-SuperCoolProject-SuperCoolProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		831001B5A8F24A3540381FF1 /* Pods-SuperCoolProject-SuperCoolProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-SuperCoolProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-SuperCoolProjectUITests/Pods-SuperCoolProject-SuperCoolProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
-		9A739688E3F7FF3B687038A9 /* Pods_CalendarService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF63CF254A341DCC6E7296D /* Pods-SuperCoolProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProjectTests.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProjectTests/Pods-SuperCoolProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		9FB291182FAFABA7B059AB09 /* Pods_CalendarService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C81BBC286D5DEE972123BA /* Pods-SuperCoolProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject.debug.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject/Pods-SuperCoolProject.debug.xcconfig"; sourceTree = "<group>"; };
+		AD0D349A52BE34ACE0313708 /* Pods-SuperCoolProject-CalendarService-CalendarServiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-CalendarService-CalendarServiceTests.debug.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-CalendarService-CalendarServiceTests/Pods-SuperCoolProject-CalendarService-CalendarServiceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B056A0BDD3DEB4E8984686BB /* Pods-SuperCoolProject-CalendarService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-CalendarService.debug.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-CalendarService/Pods-SuperCoolProject-CalendarService.debug.xcconfig"; sourceTree = "<group>"; };
+		C37167E4867232CD1494BF19 /* Pods-CalendarService-CalendarServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarService-CalendarServiceTests.release.xcconfig"; path = "Target Support Files/Pods-CalendarService-CalendarServiceTests/Pods-CalendarService-CalendarServiceTests.release.xcconfig"; sourceTree = "<group>"; };
 		DA6D12B80B544F638AAB60A7 /* Pods_SuperCoolProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperCoolProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E182F76824AD1ED7001E8A9F /* SuperCoolProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperCoolProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E182F76B24AD1ED7001E8A9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		E182F7C424ADC9E7001E8A9F /* CalendarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarService.swift; sourceTree = "<group>"; };
 		E2CA8ABC99768BC0CF7868D4 /* Pods_SuperCoolProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperCoolProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E330ABDE8BE6FC6D2D592456 /* Pods_SuperCoolProject_SuperCoolProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperCoolProject_SuperCoolProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9A78A4553BF0B46B0FEE171 /* Pods-SuperCoolProject-CalendarService-CalendarServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-CalendarService-CalendarServiceTests.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-CalendarService-CalendarServiceTests/Pods-SuperCoolProject-CalendarService-CalendarServiceTests.release.xcconfig"; sourceTree = "<group>"; };
 		F1A88608A5BE985DF5A51BCD /* Pods-SuperCoolProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject/Pods-SuperCoolProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,7 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D52F89316C182423543E201C /* Pods_CalendarService.framework in Frameworks */,
+				EFA288185BECF20548E5B364 /* Pods_CalendarService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E182F7AE24ADC9A1001E8A9F /* CalendarService.framework in Frameworks */,
+				9DB4F572D8FC57C1528BFCBA /* Pods_CalendarService_CalendarServiceTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +173,14 @@
 				9AF63CF254A341DCC6E7296D /* Pods-SuperCoolProjectTests.release.xcconfig */,
 				322A365306DDE1832D36A9F4 /* Pods-CalendarService.debug.xcconfig */,
 				207AB65FE24074B363D45A13 /* Pods-CalendarService.release.xcconfig */,
+				1337C87052D75112E90368A2 /* Pods-CalendarServiceTests.debug.xcconfig */,
+				593313BD53B43238582F6DEF /* Pods-CalendarServiceTests.release.xcconfig */,
+				24D3C6439439A9083BC83AC8 /* Pods-CalendarService-CalendarServiceTests.debug.xcconfig */,
+				C37167E4867232CD1494BF19 /* Pods-CalendarService-CalendarServiceTests.release.xcconfig */,
+				B056A0BDD3DEB4E8984686BB /* Pods-SuperCoolProject-CalendarService.debug.xcconfig */,
+				0169F035B6D5B15437A9310D /* Pods-SuperCoolProject-CalendarService.release.xcconfig */,
+				AD0D349A52BE34ACE0313708 /* Pods-SuperCoolProject-CalendarService-CalendarServiceTests.debug.xcconfig */,
+				E9A78A4553BF0B46B0FEE171 /* Pods-SuperCoolProject-CalendarService-CalendarServiceTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -179,7 +191,8 @@
 				E2CA8ABC99768BC0CF7868D4 /* Pods_SuperCoolProject.framework */,
 				E330ABDE8BE6FC6D2D592456 /* Pods_SuperCoolProject_SuperCoolProjectUITests.framework */,
 				DA6D12B80B544F638AAB60A7 /* Pods_SuperCoolProjectTests.framework */,
-				9A739688E3F7FF3B687038A9 /* Pods_CalendarService.framework */,
+				9FB291182FAFABA7B059AB09 /* Pods_CalendarService.framework */,
+				660D17D992409D5B7FECC471 /* Pods_CalendarService_CalendarServiceTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -396,15 +409,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E182F7C224ADC9A1001E8A9F /* Build configuration list for PBXNativeTarget "CalendarServiceTests" */;
 			buildPhases = (
+				C58298145A9E038927E4D636 /* [CP] Check Pods Manifest.lock */,
 				E182F7A924ADC9A1001E8A9F /* Sources */,
 				E182F7AA24ADC9A1001E8A9F /* Frameworks */,
 				E182F7AB24ADC9A1001E8A9F /* Resources */,
+				B57DE08499B5CA3C5283DEFF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				E182F7B024ADC9A1001E8A9F /* PBXTargetDependency */,
-				E182F7C724ADCBAE001E8A9F /* PBXTargetDependency */,
 			);
 			name = CalendarServiceTests;
 			productName = CalendarServiceTests;
@@ -438,7 +452,6 @@
 					};
 					E182F7AC24ADC9A1001E8A9F = {
 						CreatedOnToolsVersion = 11.5;
-						TestTargetID = E182F76724AD1ED7001E8A9F;
 					};
 				};
 			};
@@ -544,6 +557,45 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SuperCoolProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B57DE08499B5CA3C5283DEFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalendarService-CalendarServiceTests/Pods-CalendarService-CalendarServiceTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalendarService-CalendarServiceTests/Pods-CalendarService-CalendarServiceTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CalendarService-CalendarServiceTests/Pods-CalendarService-CalendarServiceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C58298145A9E038927E4D636 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CalendarService-CalendarServiceTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -695,11 +747,6 @@
 			isa = PBXTargetDependency;
 			target = E182F7A424ADC9A1001E8A9F /* CalendarService */;
 			targetProxy = E182F7B824ADC9A1001E8A9F /* PBXContainerItemProxy */;
-		};
-		E182F7C724ADCBAE001E8A9F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E182F76724AD1ED7001E8A9F /* SuperCoolProject */;
-			targetProxy = E182F7C624ADCBAE001E8A9F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1022,6 +1069,7 @@
 		};
 		E182F7BF24ADC9A1001E8A9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24D3C6439439A9083BC83AC8 /* Pods-CalendarService-CalendarServiceTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1035,12 +1083,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperCoolProject.app/SuperCoolProject";
 			};
 			name = Debug;
 		};
 		E182F7C024ADC9A1001E8A9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C37167E4867232CD1494BF19 /* Pods-CalendarService-CalendarServiceTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1054,7 +1102,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperCoolProject.app/SuperCoolProject";
 			};
 			name = Release;
 		};
