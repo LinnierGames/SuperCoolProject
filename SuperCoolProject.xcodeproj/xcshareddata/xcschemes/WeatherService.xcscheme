@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E182F76724AD1ED7001E8A9F"
-               BuildableName = "SuperCoolProject.app"
-               BlueprintName = "SuperCoolProject"
+               BlueprintIdentifier = "E182F7E824ADCF50001E8A9F"
+               BuildableName = "WeatherService.framework"
+               BlueprintName = "WeatherService"
                ReferencedContainer = "container:SuperCoolProject.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,36 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E182F77D24AD1ED8001E8A9F"
-               BuildableName = "SuperCoolProjectTests.xctest"
-               BlueprintName = "SuperCoolProjectTests"
-               ReferencedContainer = "container:SuperCoolProject.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E182F78824AD1ED8001E8A9F"
-               BuildableName = "SuperCoolProjectUITests.xctest"
-               BlueprintName = "SuperCoolProjectUITests"
-               ReferencedContainer = "container:SuperCoolProject.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E182F7AC24ADC9A1001E8A9F"
-               BuildableName = "CalendarServiceTests.xctest"
-               BlueprintName = "CalendarServiceTests"
-               ReferencedContainer = "container:SuperCoolProject.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
@@ -80,16 +50,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E182F76724AD1ED7001E8A9F"
-            BuildableName = "SuperCoolProject.app"
-            BlueprintName = "SuperCoolProject"
-            ReferencedContainer = "container:SuperCoolProject.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -97,16 +57,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E182F76724AD1ED7001E8A9F"
-            BuildableName = "SuperCoolProject.app"
-            BlueprintName = "SuperCoolProject"
+            BlueprintIdentifier = "E182F7E824ADCF50001E8A9F"
+            BuildableName = "WeatherService.framework"
+            BlueprintName = "WeatherService"
             ReferencedContainer = "container:SuperCoolProject.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

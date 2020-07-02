@@ -10,6 +10,7 @@
 		050647F6212E115433CE501B /* Pods_SuperCoolProject_SuperCoolProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E330ABDE8BE6FC6D2D592456 /* Pods_SuperCoolProject_SuperCoolProjectUITests.framework */; };
 		56489B0F88A0EB9A660611A9 /* Pods_SuperCoolProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CA8ABC99768BC0CF7868D4 /* Pods_SuperCoolProject.framework */; };
 		9DB4F572D8FC57C1528BFCBA /* Pods_CalendarService_CalendarServiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660D17D992409D5B7FECC471 /* Pods_CalendarService_CalendarServiceTests.framework */; };
+		B82B5977E408D283FAE569AA /* Pods_WeatherService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1716C54F78FC595AA07476E7 /* Pods_WeatherService.framework */; };
 		E182F76C24AD1ED7001E8A9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F76B24AD1ED7001E8A9F /* AppDelegate.swift */; };
 		E182F76E24AD1ED7001E8A9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F76D24AD1ED7001E8A9F /* SceneDelegate.swift */; };
 		E182F77024AD1ED7001E8A9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F76F24AD1ED7001E8A9F /* ViewController.swift */; };
@@ -23,8 +24,14 @@
 		E182F7BA24ADC9A1001E8A9F /* CalendarService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182F7A524ADC9A1001E8A9F /* CalendarService.framework */; };
 		E182F7BB24ADC9A1001E8A9F /* CalendarService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E182F7A524ADC9A1001E8A9F /* CalendarService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E182F7C524ADC9E7001E8A9F /* CalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F7C424ADC9E7001E8A9F /* CalendarService.swift */; };
+		E182F7F224ADCF51001E8A9F /* WeatherService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182F7E924ADCF50001E8A9F /* WeatherService.framework */; };
+		E182F7F924ADCF51001E8A9F /* WeatherServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F7F824ADCF51001E8A9F /* WeatherServiceTests.swift */; };
+		E182F7FE24ADCF51001E8A9F /* WeatherService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182F7E924ADCF50001E8A9F /* WeatherService.framework */; };
+		E182F7FF24ADCF51001E8A9F /* WeatherService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E182F7E924ADCF50001E8A9F /* WeatherService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E182F80824ADCF8A001E8A9F /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F80724ADCF8A001E8A9F /* WeatherService.swift */; };
 		EFA288185BECF20548E5B364 /* Pods_CalendarService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB291182FAFABA7B059AB09 /* Pods_CalendarService.framework */; };
 		F3D885D680DA9D66C2E9C1A6 /* Pods_SuperCoolProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6D12B80B544F638AAB60A7 /* Pods_SuperCoolProjectTests.framework */; };
+		FB6AC33304AB204ACAC13278 /* Pods_WeatherService_WeatherServiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9F773C45B187EE7A45723A /* Pods_WeatherService_WeatherServiceTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +63,20 @@
 			remoteGlobalIDString = E182F7A424ADC9A1001E8A9F;
 			remoteInfo = CalendarService;
 		};
+		E182F7F324ADCF51001E8A9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E182F76024AD1ED7001E8A9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E182F7E824ADCF50001E8A9F;
+			remoteInfo = WeatherService;
+		};
+		E182F7FC24ADCF51001E8A9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E182F76024AD1ED7001E8A9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E182F7E824ADCF50001E8A9F;
+			remoteInfo = WeatherService;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,6 +87,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				E182F7BB24ADC9A1001E8A9F /* CalendarService.framework in Embed Frameworks */,
+				E182F7FF24ADCF51001E8A9F /* WeatherService.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +97,7 @@
 /* Begin PBXFileReference section */
 		0169F035B6D5B15437A9310D /* Pods-SuperCoolProject-CalendarService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-CalendarService.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-CalendarService/Pods-SuperCoolProject-CalendarService.release.xcconfig"; sourceTree = "<group>"; };
 		1337C87052D75112E90368A2 /* Pods-CalendarServiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarServiceTests.debug.xcconfig"; path = "Target Support Files/Pods-CalendarServiceTests/Pods-CalendarServiceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1716C54F78FC595AA07476E7 /* Pods_WeatherService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		207AB65FE24074B363D45A13 /* Pods-CalendarService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarService.release.xcconfig"; path = "Target Support Files/Pods-CalendarService/Pods-CalendarService.release.xcconfig"; sourceTree = "<group>"; };
 		2450E46BF17D35C80317F540 /* Pods-SuperCoolProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-SuperCoolProjectTests/Pods-SuperCoolProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		24D3C6439439A9083BC83AC8 /* Pods-CalendarService-CalendarServiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarService-CalendarServiceTests.debug.xcconfig"; path = "Target Support Files/Pods-CalendarService-CalendarServiceTests/Pods-CalendarService-CalendarServiceTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,13 +105,18 @@
 		593313BD53B43238582F6DEF /* Pods-CalendarServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarServiceTests.release.xcconfig"; path = "Target Support Files/Pods-CalendarServiceTests/Pods-CalendarServiceTests.release.xcconfig"; sourceTree = "<group>"; };
 		660D17D992409D5B7FECC471 /* Pods_CalendarService_CalendarServiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarService_CalendarServiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FC959685DDF216CB66FC702 /* Pods-SuperCoolProject-SuperCoolProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-SuperCoolProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-SuperCoolProjectUITests/Pods-SuperCoolProject-SuperCoolProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7AAE2E731111736F825A9D88 /* Pods-WeatherService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherService.release.xcconfig"; path = "Target Support Files/Pods-WeatherService/Pods-WeatherService.release.xcconfig"; sourceTree = "<group>"; };
 		831001B5A8F24A3540381FF1 /* Pods-SuperCoolProject-SuperCoolProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-SuperCoolProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-SuperCoolProjectUITests/Pods-SuperCoolProject-SuperCoolProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9AF63CF254A341DCC6E7296D /* Pods-SuperCoolProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProjectTests.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProjectTests/Pods-SuperCoolProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FB291182FAFABA7B059AB09 /* Pods_CalendarService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C81BBC286D5DEE972123BA /* Pods-SuperCoolProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject.debug.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject/Pods-SuperCoolProject.debug.xcconfig"; sourceTree = "<group>"; };
 		AD0D349A52BE34ACE0313708 /* Pods-SuperCoolProject-CalendarService-CalendarServiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-CalendarService-CalendarServiceTests.debug.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-CalendarService-CalendarServiceTests/Pods-SuperCoolProject-CalendarService-CalendarServiceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B056A0BDD3DEB4E8984686BB /* Pods-SuperCoolProject-CalendarService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-CalendarService.debug.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-CalendarService/Pods-SuperCoolProject-CalendarService.debug.xcconfig"; sourceTree = "<group>"; };
+		B33715443A76827F34FE4172 /* Pods-WeatherService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherService.debug.xcconfig"; path = "Target Support Files/Pods-WeatherService/Pods-WeatherService.debug.xcconfig"; sourceTree = "<group>"; };
+		BA9F773C45B187EE7A45723A /* Pods_WeatherService_WeatherServiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherService_WeatherServiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37167E4867232CD1494BF19 /* Pods-CalendarService-CalendarServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarService-CalendarServiceTests.release.xcconfig"; path = "Target Support Files/Pods-CalendarService-CalendarServiceTests/Pods-CalendarService-CalendarServiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		C64C2D8E90D7CC9F6D43878A /* Pods-WeatherService-WeatherServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherService-WeatherServiceTests.release.xcconfig"; path = "Target Support Files/Pods-WeatherService-WeatherServiceTests/Pods-WeatherService-WeatherServiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		C8B6EF5D7E4CD311B0D38FA1 /* Pods-WeatherService-WeatherServiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherService-WeatherServiceTests.debug.xcconfig"; path = "Target Support Files/Pods-WeatherService-WeatherServiceTests/Pods-WeatherService-WeatherServiceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA6D12B80B544F638AAB60A7 /* Pods_SuperCoolProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperCoolProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E182F76824AD1ED7001E8A9F /* SuperCoolProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperCoolProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E182F76B24AD1ED7001E8A9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +138,12 @@
 		E182F7B424ADC9A1001E8A9F /* CalendarServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarServiceTests.swift; sourceTree = "<group>"; };
 		E182F7B624ADC9A1001E8A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E182F7C424ADC9E7001E8A9F /* CalendarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarService.swift; sourceTree = "<group>"; };
+		E182F7E924ADCF50001E8A9F /* WeatherService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatherService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E182F7EC24ADCF50001E8A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E182F7F124ADCF50001E8A9F /* WeatherServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E182F7F824ADCF51001E8A9F /* WeatherServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceTests.swift; sourceTree = "<group>"; };
+		E182F7FA24ADCF51001E8A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E182F80724ADCF8A001E8A9F /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		E2CA8ABC99768BC0CF7868D4 /* Pods_SuperCoolProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperCoolProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E330ABDE8BE6FC6D2D592456 /* Pods_SuperCoolProject_SuperCoolProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperCoolProject_SuperCoolProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A78A4553BF0B46B0FEE171 /* Pods-SuperCoolProject-CalendarService-CalendarServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-CalendarService-CalendarServiceTests.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-CalendarService-CalendarServiceTests/Pods-SuperCoolProject-CalendarService-CalendarServiceTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E182F7BA24ADC9A1001E8A9F /* CalendarService.framework in Frameworks */,
+				E182F7FE24ADCF51001E8A9F /* WeatherService.framework in Frameworks */,
 				56489B0F88A0EB9A660611A9 /* Pods_SuperCoolProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +194,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E182F7E624ADCF50001E8A9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B82B5977E408D283FAE569AA /* Pods_WeatherService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E182F7EE24ADCF50001E8A9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E182F7F224ADCF51001E8A9F /* WeatherService.framework in Frameworks */,
+				FB6AC33304AB204ACAC13278 /* Pods_WeatherService_WeatherServiceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -181,6 +233,10 @@
 				0169F035B6D5B15437A9310D /* Pods-SuperCoolProject-CalendarService.release.xcconfig */,
 				AD0D349A52BE34ACE0313708 /* Pods-SuperCoolProject-CalendarService-CalendarServiceTests.debug.xcconfig */,
 				E9A78A4553BF0B46B0FEE171 /* Pods-SuperCoolProject-CalendarService-CalendarServiceTests.release.xcconfig */,
+				B33715443A76827F34FE4172 /* Pods-WeatherService.debug.xcconfig */,
+				7AAE2E731111736F825A9D88 /* Pods-WeatherService.release.xcconfig */,
+				C8B6EF5D7E4CD311B0D38FA1 /* Pods-WeatherService-WeatherServiceTests.debug.xcconfig */,
+				C64C2D8E90D7CC9F6D43878A /* Pods-WeatherService-WeatherServiceTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -193,6 +249,8 @@
 				DA6D12B80B544F638AAB60A7 /* Pods_SuperCoolProjectTests.framework */,
 				9FB291182FAFABA7B059AB09 /* Pods_CalendarService.framework */,
 				660D17D992409D5B7FECC471 /* Pods_CalendarService_CalendarServiceTests.framework */,
+				1716C54F78FC595AA07476E7 /* Pods_WeatherService.framework */,
+				BA9F773C45B187EE7A45723A /* Pods_WeatherService_WeatherServiceTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -217,6 +275,8 @@
 				E182F78924AD1ED8001E8A9F /* SuperCoolProjectUITests.xctest */,
 				E182F7A524ADC9A1001E8A9F /* CalendarService.framework */,
 				E182F7AD24ADC9A1001E8A9F /* CalendarServiceTests.xctest */,
+				E182F7E924ADCF50001E8A9F /* WeatherService.framework */,
+				E182F7F124ADCF50001E8A9F /* WeatherServiceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -260,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				E182F7A624ADC9A1001E8A9F /* CalendarService */,
+				E182F7EA24ADCF50001E8A9F /* WeatherService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -313,10 +374,44 @@
 			path = Impl;
 			sourceTree = "<group>";
 		};
+		E182F7EA24ADCF50001E8A9F /* WeatherService */ = {
+			isa = PBXGroup;
+			children = (
+				E182F80724ADCF8A001E8A9F /* WeatherService.swift */,
+				E182F80624ADCF65001E8A9F /* Impl */,
+				E182F7EC24ADCF50001E8A9F /* Info.plist */,
+			);
+			path = WeatherService;
+			sourceTree = "<group>";
+		};
+		E182F7F724ADCF51001E8A9F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E182F7F824ADCF51001E8A9F /* WeatherServiceTests.swift */,
+				E182F7FA24ADCF51001E8A9F /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E182F80624ADCF65001E8A9F /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				E182F7F724ADCF51001E8A9F /* Tests */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
 		E182F7A024ADC9A1001E8A9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E182F7E424ADCF50001E8A9F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -341,6 +436,7 @@
 			);
 			dependencies = (
 				E182F7B924ADC9A1001E8A9F /* PBXTargetDependency */,
+				E182F7FD24ADCF51001E8A9F /* PBXTargetDependency */,
 			);
 			name = SuperCoolProject;
 			productName = SuperCoolProject;
@@ -425,6 +521,45 @@
 			productReference = E182F7AD24ADC9A1001E8A9F /* CalendarServiceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E182F7E824ADCF50001E8A9F /* WeatherService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E182F80424ADCF51001E8A9F /* Build configuration list for PBXNativeTarget "WeatherService" */;
+			buildPhases = (
+				4A3895F4C322EF384002E035 /* [CP] Check Pods Manifest.lock */,
+				E182F7E424ADCF50001E8A9F /* Headers */,
+				E182F7E524ADCF50001E8A9F /* Sources */,
+				E182F7E624ADCF50001E8A9F /* Frameworks */,
+				E182F7E724ADCF50001E8A9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeatherService;
+			productName = WeatherService;
+			productReference = E182F7E924ADCF50001E8A9F /* WeatherService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E182F7F024ADCF50001E8A9F /* WeatherServiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E182F80524ADCF51001E8A9F /* Build configuration list for PBXNativeTarget "WeatherServiceTests" */;
+			buildPhases = (
+				4345C727FBAEBFD59BBBE1F9 /* [CP] Check Pods Manifest.lock */,
+				E182F7ED24ADCF50001E8A9F /* Sources */,
+				E182F7EE24ADCF50001E8A9F /* Frameworks */,
+				E182F7EF24ADCF50001E8A9F /* Resources */,
+				49F0BD1F289365FC04AE440C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E182F7F424ADCF51001E8A9F /* PBXTargetDependency */,
+			);
+			name = WeatherServiceTests;
+			productName = WeatherServiceTests;
+			productReference = E182F7F124ADCF50001E8A9F /* WeatherServiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -453,6 +588,13 @@
 					E182F7AC24ADC9A1001E8A9F = {
 						CreatedOnToolsVersion = 11.5;
 					};
+					E182F7E824ADCF50001E8A9F = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+					E182F7F024ADCF50001E8A9F = {
+						CreatedOnToolsVersion = 11.5;
+					};
 				};
 			};
 			buildConfigurationList = E182F76324AD1ED7001E8A9F /* Build configuration list for PBXProject "SuperCoolProject" */;
@@ -473,6 +615,8 @@
 				E182F78824AD1ED8001E8A9F /* SuperCoolProjectUITests */,
 				E182F7A424ADC9A1001E8A9F /* CalendarService */,
 				E182F7AC24ADC9A1001E8A9F /* CalendarServiceTests */,
+				E182F7E824ADCF50001E8A9F /* WeatherService */,
+				E182F7F024ADCF50001E8A9F /* WeatherServiceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -516,6 +660,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E182F7E724ADCF50001E8A9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E182F7EF24ADCF50001E8A9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -535,6 +693,67 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SuperCoolProject-SuperCoolProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4345C727FBAEBFD59BBBE1F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeatherService-WeatherServiceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49F0BD1F289365FC04AE440C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeatherService-WeatherServiceTests/Pods-WeatherService-WeatherServiceTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeatherService-WeatherServiceTests/Pods-WeatherService-WeatherServiceTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeatherService-WeatherServiceTests/Pods-WeatherService-WeatherServiceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A3895F4C322EF384002E035 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeatherService-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -725,6 +944,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E182F7E524ADCF50001E8A9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E182F80824ADCF8A001E8A9F /* WeatherService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E182F7ED24ADCF50001E8A9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E182F7F924ADCF51001E8A9F /* WeatherServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -747,6 +982,16 @@
 			isa = PBXTargetDependency;
 			target = E182F7A424ADC9A1001E8A9F /* CalendarService */;
 			targetProxy = E182F7B824ADC9A1001E8A9F /* PBXContainerItemProxy */;
+		};
+		E182F7F424ADCF51001E8A9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E182F7E824ADCF50001E8A9F /* WeatherService */;
+			targetProxy = E182F7F324ADCF51001E8A9F /* PBXContainerItemProxy */;
+		};
+		E182F7FD24ADCF51001E8A9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E182F7E824ADCF50001E8A9F /* WeatherService */;
+			targetProxy = E182F7FC24ADCF51001E8A9F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1105,6 +1350,103 @@
 			};
 			name = Release;
 		};
+		E182F80024ADCF51001E8A9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B33715443A76827F34FE4172 /* Pods-WeatherService.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SuperCoolProject/Services/WeatherService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = foobar.WeatherService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E182F80124ADCF51001E8A9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AAE2E731111736F825A9D88 /* Pods-WeatherService.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SuperCoolProject/Services/WeatherService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = foobar.WeatherService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E182F80224ADCF51001E8A9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8B6EF5D7E4CD311B0D38FA1 /* Pods-WeatherService-WeatherServiceTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuperCoolProject/Services/WeatherService/Impl/Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = foobar.WeatherServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E182F80324ADCF51001E8A9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C64C2D8E90D7CC9F6D43878A /* Pods-WeatherService-WeatherServiceTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuperCoolProject/Services/WeatherService/Impl/Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = foobar.WeatherServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1158,6 +1500,24 @@
 			buildConfigurations = (
 				E182F7BF24ADC9A1001E8A9F /* Debug */,
 				E182F7C024ADC9A1001E8A9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E182F80424ADCF51001E8A9F /* Build configuration list for PBXNativeTarget "WeatherService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E182F80024ADCF51001E8A9F /* Debug */,
+				E182F80124ADCF51001E8A9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E182F80524ADCF51001E8A9F /* Build configuration list for PBXNativeTarget "WeatherServiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E182F80224ADCF51001E8A9F /* Debug */,
+				E182F80324ADCF51001E8A9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

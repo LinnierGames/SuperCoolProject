@@ -27,4 +27,15 @@ target 'SuperCoolProject' do
     end
   end
 
+  target 'WeatherService' do
+    inherit! :search_paths
+
+    pod 'Promises'
+
+    target 'WeatherServiceTests' do
+      # Removing this line will inherit the parent pods
+      # inherit! :search_paths
+    end
+  end
+
 end

@@ -19,6 +19,11 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>WeatherService.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -43,6 +48,16 @@
 			<true/>
 		</dict>
 		<key>E182F7AC24ADC9A1001E8A9F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E182F7E824ADCF50001E8A9F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E182F7F024ADCF50001E8A9F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

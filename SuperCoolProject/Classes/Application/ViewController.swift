@@ -33,6 +33,7 @@ class ViewController: UIViewController {
 
 import Promise
 import CalendarService
+import WeatherService
 
 // agenda
 
@@ -51,15 +52,5 @@ public protocol AgendaService {
 }
 
 // weather
-
-public struct Weather {
-  let date: Date
-  let lowTemperature: Float
-  let highTemperature: Float
-}
-
-public protocol WeatherService {
-  func weather(for date: Date) -> Promise<Weather>
-}
 
 // calendar
