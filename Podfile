@@ -46,6 +46,9 @@ target 'SuperCoolProject' do
 
     target 'WeatherServiceTests' do
     end
+    target 'WeatherServiceMocks' do
+      pod 'Sourcery'
+    end
   end
 
 end
