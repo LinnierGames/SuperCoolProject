@@ -1,0 +1,53 @@
+# docs here https://help.github.com/en/actions/automating-your-workflow-with-github-actions/software-installed-on-github-hosted-runners#xcode
+
+name: Compile and Test project
+
+on: pull_request
+
+jobs:
+  compile:
+    name: Compile
+    runs-on: macOS-latest
+    strategy:
+      matrix:
+        destination: ['platform=iOS Simulator,name=iPhone 11']
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Install Deps
+        run: |
+          pod install
+      - name: Clean and Build
+        run: |
+          xcodebuild clean build -workspace SuperCoolProject.xcworkspace -scheme SuperCoolProject -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+        env:
+          destination: ${{ matrix.destination }}
+  linter:
+    name: SwiftLint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run SwiftLint
+        uses: LinnierGames/action-swiftlint@3.0.3
+  unittest:
+    name: Unit Test
+    runs-on: macOS-latest
+    strategy:
+      matrix:
+        destination: ['platform=iOS Simulator,name=iPhone 11']
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Install Deps
+        run: |
+          pod install
+      - name: Generate Mocks
+        run: |
+          ./Pods/Sourcery/bin/sourcery --sources ./SuperCoolProject --templates ./Util/Templates --output ./SuperCoolProject/Mocks/
+      - name: Clean, Compile and Test
+        run: |
+          xcodebuild clean test -workspace Angela.ai.xcworkspace -scheme Angela -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -enableCodeCoverage YES
+        env:
+          destination: ${{ matrix.destination }}
+      - name: Upload Report to Codecov
+        uses: codecov/codecov-action@v1.0.5

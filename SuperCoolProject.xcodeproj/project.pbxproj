@@ -41,6 +41,11 @@
 		E182F83624ADD298001E8A9F /* CalendarServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F83524ADD298001E8A9F /* CalendarServiceImpl.swift */; };
 		E182F83824ADD2CB001E8A9F /* AgendaService+ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F83724ADD2CB001E8A9F /* AgendaService+ID.swift */; };
 		E182F83A24ADD2E2001E8A9F /* AgendaServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F83924ADD2E2001E8A9F /* AgendaServiceImpl.swift */; };
+		E182F83E24AE5A57001E8A9F /* Mockgen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F83D24AE5A57001E8A9F /* Mockgen.swift */; };
+		E182F84124AE61C5001E8A9F /* CalendarService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182F7A524ADC9A1001E8A9F /* CalendarService.framework */; };
+		E182F84224AE61C5001E8A9F /* CalendarService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E182F7A524ADC9A1001E8A9F /* CalendarService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E182F84524AE61C5001E8A9F /* WeatherService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182F7E924ADCF50001E8A9F /* WeatherService.framework */; };
+		E182F84624AE61C5001E8A9F /* WeatherService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E182F7E924ADCF50001E8A9F /* WeatherService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFA288185BECF20548E5B364 /* Pods_CalendarService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB291182FAFABA7B059AB09 /* Pods_CalendarService.framework */; };
 		F1E63890FD61EBF4A45A08D7 /* Pods_AgendaService_AgendaServiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CDB5D89EF60C536BEAB0D2 /* Pods_AgendaService_AgendaServiceTests.framework */; };
 		F3D885D680DA9D66C2E9C1A6 /* Pods_SuperCoolProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6D12B80B544F638AAB60A7 /* Pods_SuperCoolProjectTests.framework */; };
@@ -104,6 +109,20 @@
 			remoteGlobalIDString = E182F80D24ADD055001E8A9F;
 			remoteInfo = AgendaService;
 		};
+		E182F84324AE61C5001E8A9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E182F76024AD1ED7001E8A9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E182F7A424ADC9A1001E8A9F;
+			remoteInfo = CalendarService;
+		};
+		E182F84724AE61C5001E8A9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E182F76024AD1ED7001E8A9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E182F7E824ADCF50001E8A9F;
+			remoteInfo = WeatherService;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -116,6 +135,27 @@
 				E182F7BB24ADC9A1001E8A9F /* CalendarService.framework in Embed Frameworks */,
 				E182F82424ADD055001E8A9F /* AgendaService.framework in Embed Frameworks */,
 				E182F7FF24ADCF51001E8A9F /* WeatherService.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E182F83C24AE58B5001E8A9F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E182F84924AE61C5001E8A9F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E182F84224AE61C5001E8A9F /* CalendarService.framework in Embed Frameworks */,
+				E182F84624AE61C5001E8A9F /* WeatherService.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +228,7 @@
 		E182F83524ADD298001E8A9F /* CalendarServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarServiceImpl.swift; sourceTree = "<group>"; };
 		E182F83724ADD2CB001E8A9F /* AgendaService+ID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AgendaService+ID.swift"; sourceTree = "<group>"; };
 		E182F83924ADD2E2001E8A9F /* AgendaServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaServiceImpl.swift; sourceTree = "<group>"; };
+		E182F83D24AE5A57001E8A9F /* Mockgen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockgen.swift; sourceTree = "<group>"; };
 		E2CA8ABC99768BC0CF7868D4 /* Pods_SuperCoolProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperCoolProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E330ABDE8BE6FC6D2D592456 /* Pods_SuperCoolProject_SuperCoolProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperCoolProject_SuperCoolProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A78A4553BF0B46B0FEE171 /* Pods-SuperCoolProject-CalendarService-CalendarServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-CalendarService-CalendarServiceTests.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-CalendarService-CalendarServiceTests/Pods-SuperCoolProject-CalendarService-CalendarServiceTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -262,6 +303,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E182F84124AE61C5001E8A9F /* CalendarService.framework in Frameworks */,
+				E182F84524AE61C5001E8A9F /* WeatherService.framework in Frameworks */,
 				61F77D9E6F98A75A4D946D0A /* Pods_AgendaService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +528,7 @@
 			isa = PBXGroup;
 			children = (
 				E182F81D24ADD055001E8A9F /* AgendaServiceTests.swift */,
+				E182F83D24AE5A57001E8A9F /* Mockgen.swift */,
 				E182F81F24ADD055001E8A9F /* Info.plist */,
 			);
 			path = Tests;
@@ -675,10 +719,13 @@
 				E182F80A24ADD055001E8A9F /* Sources */,
 				E182F80B24ADD055001E8A9F /* Frameworks */,
 				E182F80C24ADD055001E8A9F /* Resources */,
+				E182F84924AE61C5001E8A9F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E182F84424AE61C5001E8A9F /* PBXTargetDependency */,
+				E182F84824AE61C5001E8A9F /* PBXTargetDependency */,
 			);
 			name = AgendaService;
 			productName = AgendaService;
@@ -690,10 +737,12 @@
 			buildConfigurationList = E182F82824ADD055001E8A9F /* Build configuration list for PBXNativeTarget "AgendaServiceTests" */;
 			buildPhases = (
 				E786F2A5B72C7E546AE73FB7 /* [CP] Check Pods Manifest.lock */,
+				E182F83B24AE5469001E8A9F /* Generate Mocks */,
 				E182F81224ADD055001E8A9F /* Sources */,
 				E182F81324ADD055001E8A9F /* Frameworks */,
 				E182F81424ADD055001E8A9F /* Resources */,
 				19AC142026765980801318B1 /* [CP] Embed Pods Frameworks */,
+				E182F83C24AE58B5001E8A9F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -1061,6 +1110,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SuperCoolProject/Pods-SuperCoolProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E182F83B24AE5469001E8A9F /* Generate Mocks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Mocks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which ./Pods/Sourcery/bin/sourcery >/dev/null; then\n  ./Pods/Sourcery/bin/sourcery \\\n  --sources ./SuperCoolProject/Services/AgendaService \\\n  --templates ./Util/Templates \\\n  --output ./SuperCoolProject/Services/AgendaService/Impl/Tests/Mockgen.swift\nelse\n  echo \"error: Sourcey is not installed for this Target, please add pod 'Sourcey' to the Podfile for this target and try again\"\nfi\n";
+		};
 		E23EA93FBA152E378FB3636C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1206,6 +1273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E182F83E24AE5A57001E8A9F /* Mockgen.swift in Sources */,
 				E182F81E24ADD055001E8A9F /* AgendaServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1252,6 +1320,16 @@
 			isa = PBXTargetDependency;
 			target = E182F80D24ADD055001E8A9F /* AgendaService */;
 			targetProxy = E182F82124ADD055001E8A9F /* PBXContainerItemProxy */;
+		};
+		E182F84424AE61C5001E8A9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E182F7A424ADC9A1001E8A9F /* CalendarService */;
+			targetProxy = E182F84324AE61C5001E8A9F /* PBXContainerItemProxy */;
+		};
+		E182F84824AE61C5001E8A9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E182F7E824ADCF50001E8A9F /* WeatherService */;
+			targetProxy = E182F84724AE61C5001E8A9F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

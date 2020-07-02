@@ -1,16 +1,20 @@
 PODS:
   - Promises (2.0.4)
+  - Sourcery (0.17.0)
 
 DEPENDENCIES:
   - Promises
+  - Sourcery
 
 SPEC REPOS:
   trunk:
     - Promises
+    - Sourcery
 
 SPEC CHECKSUMS:
   Promises: fcb83dc6be43294a8d30c343636ed1a45a8d2e0a
+  Sourcery: 3ed61be7c8a1218fce349266139379dba477efe0
 
-PODFILE CHECKSUM: 18f66a2899f8643e3c901445c2555b03be8cee8f
+PODFILE CHECKSUM: c7915fd794cd86f17eb98b63c3287e6e413ffdc2
 
 COCOAPODS: 1.8.4

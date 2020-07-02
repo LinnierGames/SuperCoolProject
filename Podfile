@@ -21,8 +21,7 @@ target 'SuperCoolProject' do
     pod 'Promises'
 
     target 'AgendaServiceTests' do
-      # Removing this line will inherit the parent pods
-      # inherit! :search_paths
+      pod 'Sourcery'
     end
   end
 
@@ -32,8 +31,6 @@ target 'SuperCoolProject' do
     pod 'Promises'
 
     target 'CalendarServiceTests' do
-      # Removing this line will inherit the parent pods
-      # inherit! :search_paths
     end
   end
 
@@ -43,8 +40,6 @@ target 'SuperCoolProject' do
     pod 'Promises'
 
     target 'WeatherServiceTests' do
-      # Removing this line will inherit the parent pods
-      # inherit! :search_paths
     end
   end
 
