@@ -101,7 +101,6 @@
 				2450E46BF17D35C80317F540 /* Pods-SuperCoolProjectTests.debug.xcconfig */,
 				9AF63CF254A341DCC6E7296D /* Pods-SuperCoolProjectTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,13 +139,8 @@
 		E182F76A24AD1ED7001E8A9F /* SuperCoolProject */ = {
 			isa = PBXGroup;
 			children = (
-				E182F76B24AD1ED7001E8A9F /* AppDelegate.swift */,
-				E182F76D24AD1ED7001E8A9F /* SceneDelegate.swift */,
-				E182F76F24AD1ED7001E8A9F /* ViewController.swift */,
-				E182F77124AD1ED7001E8A9F /* Main.storyboard */,
-				E182F77424AD1ED8001E8A9F /* Assets.xcassets */,
-				E182F77624AD1ED8001E8A9F /* LaunchScreen.storyboard */,
-				E182F77924AD1ED8001E8A9F /* Info.plist */,
+				E182F79B24ADC59E001E8A9F /* Classes */,
+				E182F79C24ADC5AC001E8A9F /* Services */,
 			);
 			path = SuperCoolProject;
 			sourceTree = "<group>";
@@ -167,6 +161,43 @@
 				E182F78F24AD1ED8001E8A9F /* Info.plist */,
 			);
 			path = SuperCoolProjectUITests;
+			sourceTree = "<group>";
+		};
+		E182F79B24ADC59E001E8A9F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E182F79D24ADC5BF001E8A9F /* Application */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E182F79C24ADC5AC001E8A9F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E182F79D24ADC5BF001E8A9F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E182F77124AD1ED7001E8A9F /* Main.storyboard */,
+				E182F76B24AD1ED7001E8A9F /* AppDelegate.swift */,
+				E182F76D24AD1ED7001E8A9F /* SceneDelegate.swift */,
+				E182F76F24AD1ED7001E8A9F /* ViewController.swift */,
+				E182F79E24ADC5D2001E8A9F /* Resources */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E182F79E24ADC5D2001E8A9F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E182F77424AD1ED8001E8A9F /* Assets.xcassets */,
+				E182F77624AD1ED8001E8A9F /* LaunchScreen.storyboard */,
+				E182F77924AD1ED8001E8A9F /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -549,7 +580,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SuperCoolProject/Info.plist;
+				INFOPLIST_FILE = SuperCoolProject/Classes/Application/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -568,7 +599,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SuperCoolProject/Info.plist;
+				INFOPLIST_FILE = SuperCoolProject/Classes/Application/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
