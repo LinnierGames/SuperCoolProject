@@ -7,10 +7,19 @@
 //
 
 import XCTest
+import CalendarServiceMocks
+
 @testable import AgendaService
 
 class AgendaServiceTests: XCTestCase {
+  var calendarServiceMock: CalendarServiceMock!
+
+  override func setUp() {
+    super.setUp()
+    calendarServiceMock = CalendarServiceMock(testCase: self)
+  }
+
   func testOne() {
-    let service = AgendaServiceImpl(calendarService: <#T##CalendarService#>, weatherService: <#T##WeatherService#>)
+    let service = AgendaServiceImpl(calendarService: calendarServiceMock, weatherService: <#T##WeatherService#>)
   }
 }
