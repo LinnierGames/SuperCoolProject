@@ -1,9 +1,9 @@
 import Promise
 
 public struct Event {
-  let title: String
-  let location: String
-  let date: Date
+  public let title: String
+  public let location: String
+  public let date: Date
 }
 
 public protocol CalendarProvider {

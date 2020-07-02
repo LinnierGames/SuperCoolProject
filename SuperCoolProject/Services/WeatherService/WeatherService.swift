@@ -2,9 +2,9 @@ import Foundation
 import Promise
 
 public struct Weather {
-  let date: Date
-  let lowTemperature: Float
-  let highTemperature: Float
+  public let date: Date
+  public let lowTemperature: Float
+  public let highTemperature: Float
 }
 
 public protocol WeatherService {
