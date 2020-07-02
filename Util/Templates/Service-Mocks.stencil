@@ -1,15 +1,15 @@
 {% for protocol in types.protocols|!annotated:"skip" %}
 // sourcery:inline:{{ protocol.name }}.Mockgen
 // MARK: - {{protocol.name}}
-class {{protocol.name}}Mock: {{protocol.name}} {
+open class {{protocol.name}}Mock: {{protocol.name}} {
 {% macro mockOptionalVariable variable %}
-  var {% call mockedVariableName variable %}: {{ variable.typeName }}
+  open var {% call mockedVariableName variable %}: {{ variable.typeName }}
 {% endmacro %}
 {% macro mockNonOptionalArrayOrDictionaryVariable variable %}
-  var {% call mockedVariableName variable %}: {{ variable.typeName }} = {% if variable.isArray %}[]{% elif variable.isDictionary %}[:]{% endif %}
+  open var {% call mockedVariableName variable %}: {{ variable.typeName }} = {% if variable.isArray %}[]{% elif variable.isDictionary %}[:]{% endif %}
 {% endmacro %}
 {% macro mockNonOptionalVariable variable %}
-  var {% call mockedVariableName variable %}: {{ variable.typeName }} {
+  open var {% call mockedVariableName variable %}: {{ variable.typeName }} {
     get { return {% call underlyingMockedVariableName variable %} }
     set(value) { {% call underlyingMockedVariableName variable %} = value }
   }
@@ -22,7 +22,7 @@ class {{protocol.name}}Mock: {{protocol.name}} {
 {% endfor %}
 
 {% if protocol.annotations.data-model %}
-  init({% for var in protocol.allVariables|!definedInExtension %}{{var.name}}: {{var.typeName}}{{ ', ' if not forloop.last }}{% endfor %}) {
+  public init({% for var in protocol.allVariables|!definedInExtension %}{{var.name}}: {{var.typeName}}{{ ', ' if not forloop.last }}{% endfor %}) {
     {% for var in protocol.allVariables|!definedInExtension %}
     self.{{var.name}} = {{var.name}}
     {% endfor %}
@@ -30,7 +30,7 @@ class {{protocol.name}}Mock: {{protocol.name}} {
 {% else %}
   private let testCase: XCTestCase
 
-  init(testCase: XCTestCase) {
+  public init(testCase: XCTestCase) {
     self.testCase = testCase
   }
 {% endif %}
@@ -51,13 +51,13 @@ class {{protocol.name}}Mock: {{protocol.name}} {
   }
 
   @discardableResult
-  func expect{% call methodTestName func %}(_ block: @escaping {% call methodSignatureClosure func %}) -> XCTestExpectation {
+  open func expect{% call methodTestName func %}(_ block: @escaping {% call methodSignatureClosure func %}) -> XCTestExpectation {
     self.{% call methodExpectationName func %} = self.testCase.expectation(description: "{{protocol.name}}.{{func.selectorName}}")
     self.{% call methodExpectedBlockName func %} = block
     return self.{% call methodExpectationName func %}!
   }
 
-  func {{func.name}} -> {{func.returnTypeName}} {
+  open func {{func.name}} -> {{func.returnTypeName}} {
     XCTAssertNotNil(self.{% call methodExpectationName func %})
     self.{% call methodExpectationName func %}?.fulfill()
     do {

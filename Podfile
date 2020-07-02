@@ -21,6 +21,8 @@ target 'SuperCoolProject' do
     pod 'Promises'
 
     target 'AgendaServiceTests' do
+    end
+    target 'AgendaServiceMocks' do
       pod 'Sourcery'
     end
   end

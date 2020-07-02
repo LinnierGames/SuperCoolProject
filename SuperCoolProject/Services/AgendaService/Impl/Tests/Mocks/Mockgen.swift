@@ -4,11 +4,11 @@ import AgendaService
 
 // sourcery:inline:AgendaService.Mockgen
 // MARK: - AgendaService
-class AgendaServiceMock: AgendaService {
+open class AgendaServiceMock: AgendaService {
 
   private let testCase: XCTestCase
 
-  init(testCase: XCTestCase) {
+  public init(testCase: XCTestCase) {
     self.testCase = testCase
   }
 
@@ -21,13 +21,13 @@ class AgendaServiceMock: AgendaService {
   }
 
   @discardableResult
-  func expectAgendaForDate(_ block: @escaping (Date) throws -> Promise<Agenda>) -> XCTestExpectation {
+  open func expectAgendaForDate(_ block: @escaping (Date) throws -> Promise<Agenda>) -> XCTestExpectation {
     self.expectationForAgendaForDate = self.testCase.expectation(description: "AgendaService.agenda(for:)")
     self.expectAgendaForDateBlock = block
     return self.expectationForAgendaForDate!
   }
 
-  func agenda(for date: Date) -> Promise<Agenda> {
+  open func agenda(for date: Date) -> Promise<Agenda> {
     XCTAssertNotNil(self.expectationForAgendaForDate)
     self.expectationForAgendaForDate?.fulfill()
     do {
