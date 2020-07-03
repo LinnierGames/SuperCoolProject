@@ -13,25 +13,22 @@ import CalendarService
 import WeatherService
 import AgendaService
 
-// display calendar and its weather
-// - oAuth
-// - cache auth token
-// - fetching events from each calendar provider
-// - cache events
-// - fetch weather
-// - cache weather
+import Combine
 
-//use protocols
-//use frameworks
-//use cocoapods
-//add mocking generator
-
-class ViewController: UIViewController {
+class AgendaViewController: UIViewController {
+  private let agendaViewModel = AgendaViewModel()
+  private var bag = Set<AnyCancellable>()
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+
+    let today = Date()
+    agendaViewModel.agenda(for: today)
+      .sink(receiveValue: updateUI)
+      .store(in: &bag)
   }
 
-
+  private func updateUI(with agenda: Agenda) {
+    // update the ui with the given agenda
+  }
 }

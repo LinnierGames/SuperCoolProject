@@ -65,6 +65,7 @@
 		E182F8A824AE6CBF001E8A9F /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E182F86C24AE64E5001E8A9F /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E182F90724AECAD1001E8A9F /* PromiseExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F90624AECAD1001E8A9F /* PromiseExpectation.swift */; };
 		E182F90824AECD17001E8A9F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182F86C24AE64E5001E8A9F /* XCTest.framework */; };
+		E182F90C24AEDA3B001E8A9F /* AgendaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182F90B24AEDA3B001E8A9F /* AgendaViewModel.swift */; };
 		EFA288185BECF20548E5B364 /* Pods_CalendarService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB291182FAFABA7B059AB09 /* Pods_CalendarService.framework */; };
 		F1E63890FD61EBF4A45A08D7 /* Pods_AgendaService_AgendaServiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CDB5D89EF60C536BEAB0D2 /* Pods_AgendaService_AgendaServiceTests.framework */; };
 		F3D885D680DA9D66C2E9C1A6 /* Pods_SuperCoolProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6D12B80B544F638AAB60A7 /* Pods_SuperCoolProjectTests.framework */; };
@@ -333,6 +334,7 @@
 		E182F8FE24AECA1D001E8A9F /* TestUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E182F90124AECA1D001E8A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E182F90624AECAD1001E8A9F /* PromiseExpectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseExpectation.swift; sourceTree = "<group>"; };
+		E182F90B24AEDA3B001E8A9F /* AgendaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaViewModel.swift; sourceTree = "<group>"; };
 		E2CA8ABC99768BC0CF7868D4 /* Pods_SuperCoolProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperCoolProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E330ABDE8BE6FC6D2D592456 /* Pods_SuperCoolProject_SuperCoolProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperCoolProject_SuperCoolProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A78A4553BF0B46B0FEE171 /* Pods-SuperCoolProject-CalendarService-CalendarServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperCoolProject-CalendarService-CalendarServiceTests.release.xcconfig"; path = "Target Support Files/Pods-SuperCoolProject-CalendarService-CalendarServiceTests/Pods-SuperCoolProject-CalendarService-CalendarServiceTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -601,6 +603,7 @@
 				E182F76B24AD1ED7001E8A9F /* AppDelegate.swift */,
 				E182F76D24AD1ED7001E8A9F /* SceneDelegate.swift */,
 				E182F76F24AD1ED7001E8A9F /* ViewController.swift */,
+				E182F90B24AEDA3B001E8A9F /* AgendaViewModel.swift */,
 				E182F79E24ADC5D2001E8A9F /* Resources */,
 			);
 			path = Application;
@@ -1690,6 +1693,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E182F90C24AEDA3B001E8A9F /* AgendaViewModel.swift in Sources */,
 				E182F77024AD1ED7001E8A9F /* ViewController.swift in Sources */,
 				E182F76C24AD1ED7001E8A9F /* AppDelegate.swift in Sources */,
 				E182F76E24AD1ED7001E8A9F /* SceneDelegate.swift in Sources */,
