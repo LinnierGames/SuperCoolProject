@@ -8,6 +8,11 @@
 
 import UIKit
 
+import Promise
+import CalendarService
+import WeatherService
+import AgendaService
+
 // display calendar and its weather
 // - oAuth
 // - cache auth token
@@ -30,8 +35,3 @@ class ViewController: UIViewController {
 
 
 }
-
-import Promise
-import CalendarService
-import WeatherService
-import AgendaService

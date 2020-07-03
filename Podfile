@@ -6,15 +6,7 @@ target 'SuperCoolProject' do
 
   pod 'Promises'
 
-  target 'SuperCoolProjectTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'SuperCoolProjectUITests' do
-    # Pods for testing
-  end
-
+  # Services
   target 'AgendaService' do
     inherit! :search_paths
 
@@ -51,4 +43,20 @@ target 'SuperCoolProject' do
     end
   end
 
+  # Shared
+  target 'TestUtil' do
+    inherit! :search_paths
+
+    pod 'Promises'
+  end
+
+  # App test targets
+  target 'SuperCoolProjectTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'SuperCoolProjectUITests' do
+    # Pods for testing
+  end
 end

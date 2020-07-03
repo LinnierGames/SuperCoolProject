@@ -12,6 +12,7 @@ import CalendarServiceMocks
 @testable import WeatherService
 import WeatherServiceMocks
 import Promise
+import TestUtil
 
 @testable import AgendaService
 
@@ -45,7 +46,7 @@ class AgendaServiceTests: XCTestCase {
     var expectingDates = [event1, event2].map { $0.date }
     var resultingWeather = [
       Weather(date: event1.date, lowTemperature: 72, highTemperature: 82),
-      Weather(date: event1.date, lowTemperature: 54, highTemperature: 64),
+      Weather(date: event2.date, lowTemperature: 54, highTemperature: 64),
     ]
     weatherServiceMock.expectWeatherForDate { date in
       let expectingDate = expectingDates.removeFirst()
@@ -59,7 +60,21 @@ class AgendaServiceTests: XCTestCase {
 
     let agenda = service.agenda(for: today)
 
-    // todo test the agenda promise succeeds and has the expected AgendaItem properties
+    promiseExpectation(agenda).expectThen { agenda in
+      XCTAssertEqual(agenda.date, today)
+
+      guard agenda.items.count == 2 else {
+        XCTFail("expected agenda.items.count to be 2, got \(agenda.items.count)")
+        return
+      }
+
+      XCTAssertEqual(agenda.items[0].event.date, event1.date)
+      XCTAssertEqual(agenda.items[0].event.title, event1.title)
+      XCTAssertEqual(agenda.items[0].event.location, event1.location)
+      XCTAssertEqual(agenda.items[1].event.date, event2.date)
+      XCTAssertEqual(agenda.items[1].event.title, event2.title)
+      XCTAssertEqual(agenda.items[1].event.location, event2.location)
+    }
 
     waitForExpectations(timeout: 5.0)
   }
