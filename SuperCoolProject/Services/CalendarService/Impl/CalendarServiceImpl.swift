@@ -1,11 +1,15 @@
-import Promise
+import Combine
 
 class CalendarServiceImpl: CalendarService {
-  func listOfSignedInProviders() -> Promise<[CalendarProvider]> {
-    return Promise { _,_ in }
+  func listOfSignedInProviders() -> Future<[CalendarProvider], Never> {
+    return Future { _ in }
   }
 
-  func listOfSupportedProviders() -> Promise<[SignInCalendarProvider]> {
-    return Promise { _,_ in }
+  func listOfSignedInProviders() -> AnyPublisher<[CalendarProvider], Never> {
+    return Empty().eraseToAnyPublisher()
+  }
+
+  func listOfSupportedProviders() -> Future<[SignInCalendarProvider], Never> {
+    return Future { _ in }
   }
 }

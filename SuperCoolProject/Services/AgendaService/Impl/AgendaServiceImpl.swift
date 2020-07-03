@@ -1,4 +1,5 @@
-import Promise
+import Foundation
+import Combine
 import CalendarService
 import WeatherService
 
@@ -14,31 +15,25 @@ class AgendaServiceImpl: AgendaService {
     self.weatherService = weatherService
   }
 
-  func agenda(for date: Date) -> Promise<Agenda> {
-    return calendarService.listOfSignedInProviders().then { providers -> Promise<[Event]> in
-      let promises = providers.map { provider in
-        return provider.events(for: date).recover { error in
-          print("failed to get events: \(error)")
-          return Promise(value: [])
-        }
+  func agenda(for date: Date) -> AnyPublisher<Agenda, Never> {
+    return calendarService.listOfSignedInProviders()
+      .flatMap { providers in
+        Publishers.Sequence(
+          sequence: providers.map { $0.events(for: date) }
+        ).flatMap { $0 }.collect()
       }
-
-      return Promises.all(promises).then { allEvents in
-        return allEvents.flatMap { $0 }
+      .map { nestedEvents in
+        nestedEvents.flatMap { $0 }
       }
-    }.then { events in
-      let agendaItems = events.map { event -> Promise<AgendaItem?> in
-        return self.weatherService.weather(for: event.date).then { weather in
-          return AgendaItem(event: event, weather: weather)
-        }.recover { error in
-          print("failed to get weather: \(error)")
-          return Promise(value: nil)
-        }
+      .flatMap { events in
+        Publishers.Sequence(sequence: events.map { event in
+          self.weatherService.weather(for: event.date).map { weather in
+            AgendaItem(event: event, weather: weather)
+          }.catch { _ in Empty() }
+        }).flatMap { $0 }.collect()
       }
-
-      return Promises.all(agendaItems).then { items in
-        return Agenda(date: date, items: items.compactMap({ $0 }))
-      }
-    }
+      .map { items in
+        Agenda(date: date, items: items)
+      }.eraseToAnyPublisher()
   }
 }

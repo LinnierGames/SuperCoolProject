@@ -1,5 +1,5 @@
+import Combine
 import Foundation
-import Promise
 
 public struct Weather {
   public let date: Date
@@ -7,6 +7,9 @@ public struct Weather {
   public let highTemperature: Float
 }
 
+public enum WeatherServiceErrors: Error {
+}
+
 public protocol WeatherService {
-  func weather(for date: Date) -> Promise<Weather>
+  func weather(for date: Date) -> Future<Weather, WeatherServiceErrors>
 }

@@ -1,12 +1,5 @@
-//
-//  AgendaService.swift
-//  SuperCoolProject
-//
-//  Created by Erick Sanchez on 7/2/20.
-//  Copyright © 2020 Erick Sanchez. All rights reserved.
-//
-
-import Promise
+import Foundation
+import Combine
 import CalendarService
 import WeatherService
 
@@ -21,5 +14,5 @@ public struct AgendaItem {
 }
 
 public protocol AgendaService {
-  func agenda(for date: Date) -> Promise<Agenda>
+  func agenda(for date: Date) -> AnyPublisher<Agenda, Never>
 }

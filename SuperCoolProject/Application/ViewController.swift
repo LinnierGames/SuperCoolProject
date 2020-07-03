@@ -8,7 +8,6 @@
 
 import UIKit
 
-import Promise
 import CalendarService
 import WeatherService
 import AgendaService
@@ -28,7 +27,7 @@ class AgendaViewController: UIViewController {
       .store(in: &bag)
   }
 
-  private func updateUI(with agenda: Agenda) {
+  private func updateUI(agenda: Agenda) {
     // update the ui with the given agenda
   }
 }

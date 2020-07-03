@@ -1,4 +1,5 @@
-import Promise
+import Foundation
+import Combine
 
 public struct Event {
   public let title: String
@@ -7,8 +8,8 @@ public struct Event {
 }
 
 public protocol CalendarProvider {
-  func events(for date: Date) -> Promise<[Event]>
-  func signOut() -> Promise<Void>
+  func events(for date: Date) -> AnyPublisher<[Event], Never>
+  func signOut() -> Future<Void, Never>
 }
 
 public enum SignInCalendarProviderErrors: Error {
@@ -16,10 +17,10 @@ public enum SignInCalendarProviderErrors: Error {
 }
 
 public protocol SignInCalendarProvider {
-  func signIn(email: String, password: String) -> Promise<CalendarProvider>
+  func signIn(email: String, password: String) -> Future<CalendarProvider, SignInCalendarProviderErrors>
 }
 
 public protocol CalendarService {
-  func listOfSignedInProviders() -> Promise<[CalendarProvider]>
-  func listOfSupportedProviders() -> Promise<[SignInCalendarProvider]>
+  func listOfSignedInProviders() -> AnyPublisher<[CalendarProvider], Never>
+  func listOfSupportedProviders() -> Future<[SignInCalendarProvider], Never>
 }
